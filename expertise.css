@@ -1,4 +1,4 @@
-/* =========================================================
+   /* =========================================================
    EXPERTISE PAGE
    ABDULAZIZ AL-OUFI EST
    CLEAN CINEMATIC VERSION
@@ -37,7 +37,7 @@ body.expertise-body {
     overflow: hidden;
 
     background-image:
-        url("IMAGE/expertise-bg.png");
+        url("expertise-bg.png");
 
     background-size: cover;
 
@@ -529,7 +529,7 @@ body.expertise-body {
 
 .process-receive .process-card-photo {
     background-image:
-        url("IMAGE/expertise-receive.jpg");
+        url("expertise-receive.jpg");
 }
 
 
@@ -537,7 +537,7 @@ body.expertise-body {
 
 .process-store .process-card-photo {
     background-image:
-        url("IMAGE/expertise-store.jpg");
+        url("expertise-store.jpg");
 }
 
 
@@ -545,7 +545,7 @@ body.expertise-body {
 
 .process-move .process-card-photo {
     background-image:
-        url("IMAGE/expertise-move.jpg");
+        url("expertise-move.jpg");
 }
 
 
@@ -911,7 +911,7 @@ body.expertise-body {
 
     min-height: calc(100vh - 90px) !important;
 
-    background-image: url("./IMAGE/expertise-bg.png") !important;
+    background-image: url("expertise-bg.png") !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
