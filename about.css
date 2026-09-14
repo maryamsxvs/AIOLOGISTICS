@@ -182,7 +182,7 @@ body .navbar nav a.active::after {
     margin: 0;
 
     background:
-        url("IMAGE/about2.png")
+        url("about2.png")
         center center / cover no-repeat;
 
     overflow: hidden;
@@ -988,7 +988,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 
-    background-image: url("IMAGE/about2.png") !important;
+    background-image: url("about2.png") !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
