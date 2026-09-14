@@ -1928,22 +1928,22 @@ nav a:hover {
 
 .circle-1 {
     background-image:
-        url("IMAGE/warehouse-layout.jpg");
+        url("warehouse-layout.jpg");
 }
 
 .circle-2 {
     background-image:
-        url("IMAGE/inventory.jpg");
+        url("inventory.jpg");
 }
 
 .circle-3 {
     background-image:
-        url("IMAGE/warehouse-cost.jpg");
+        url("warehouse-cost.jpg");
 }
 
 .circle-4 {
     background-image:
-        url("IMAGE/process-control.png");
+        url("process-control.png");
 }
 
 
@@ -2003,7 +2003,7 @@ body {
             rgba(4, 8, 14, 0.90),
             rgba(7, 16, 29, 0.72)
         ),
-        url("IMAGE/expertise-bg.jpg");
+        url("expertise-bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -2037,7 +2037,7 @@ body {
             rgba(3, 8, 15, 0.80),
             rgba(3, 8, 15, 0.88)
         ),
-        url("IMAGE/expertise-bg.jpg") center / cover fixed no-repeat !important;
+        url("expertise-bg.jpg") center / cover fixed no-repeat !important;
 }
 
 
@@ -4116,7 +4116,7 @@ header .nav-button {
             rgba(4, 8, 14, 0.88),
             rgba(7, 16, 29, 0.72)
         ),
-        url("IMAGE/expertise-bg.jpg") center / cover no-repeat !important;
+        url("expertise-bg.jpg") center / cover no-repeat !important;
 
     background-attachment: fixed !important;
 }
@@ -4290,7 +4290,7 @@ section {
             rgba(3, 8, 15, 0.90),
             rgba(5, 14, 27, 0.78)
         ),
-        url("IMAGE/expertise-bg.jpg") center / cover no-repeat;
+        url("expertise-bg.jpg") center / cover no-repeat;
 
     background-attachment: fixed;
 
@@ -4659,7 +4659,7 @@ section {
             rgba(3, 8, 14, 0.82),
             rgba(3, 8, 14, 0.94)
         ),
-        url("IMAGE/expertise-bg.jpg") center / cover no-repeat;
+        url("expertise-bg.jpg") center / cover no-repeat;
 
     background-attachment: fixed;
 
@@ -5028,7 +5028,7 @@ section {
             rgba(3, 8, 14, 0.82),
             rgba(3, 8, 14, 0.94)
         ),
-        url("IMAGE/expertise-bg.jpg") center / cover no-repeat;
+        url("expertise-bg.jpg") center / cover no-repeat;
 
     background-attachment: fixed;
 
@@ -5401,7 +5401,7 @@ body {
             rgba(2, 7, 14, 0.68),
             rgba(2, 7, 14, 0.82)
         ),
-        url("IMAGE/truck-blur.png");
+        url("truck-blur.png");
 
     background-size: cover;
     background-position: center;
@@ -5424,7 +5424,7 @@ body {
             rgba(2, 7, 14, 0.74),
             rgba(2, 7, 14, 0.86)
         ),
-        url("IMAGE/truck-blur.png") center / cover no-repeat fixed;
+        url("truck-blur.png") center / cover no-repeat fixed;
 }
 /* ================================
    TRANSPARENT NAVBAR
@@ -5541,7 +5541,7 @@ body {
             rgba(2, 6, 11, 0.68),
             rgba(2, 6, 11, 0.78)
         ),
-        url("IMAGE/truck-blur.png") center center / cover no-repeat fixed !important;
+        url("truck-blur.png") center center / cover no-repeat fixed !important;
 }
 
 
@@ -5590,7 +5590,7 @@ main,
             rgba(2, 6, 11, 0.28),
             rgba(2, 6, 11, 0.48)
         ),
-        url("IMAGE/truck-blur.png") center / cover no-repeat !important;
+        url("truck-blur.png") center / cover no-repeat !important;
 }
 
 
@@ -5631,7 +5631,7 @@ body {
             rgba(2, 6, 11, 0.28),
             rgba(2, 6, 11, 0.48)
         ),
-        url("IMAGE/truck-blur.png") center / cover no-repeat !important;
+        url("truck-blur.png") center / cover no-repeat !important;
 }
 
 
@@ -5663,7 +5663,7 @@ body {
             rgba(2, 6, 11, 0.28),
             rgba(2, 6, 11, 0.48)
         ),
-        url("IMAGE/truck-blur.png") center center / cover no-repeat !important;
+        url("truck-blur.png") center center / cover no-repeat !important;
 
     background-attachment: fixed !important;
 }
@@ -5744,7 +5744,7 @@ body:has(.team-showcase) {
             rgba(2, 6, 11, 0.55),
             rgba(2, 6, 11, 0.65)
         ),
-        url("IMAGE/truck-blur.png") center center / cover fixed no-repeat !important;
+        url("truck-blur.png") center center / cover fixed no-repeat !important;
 
     min-height: 100vh;
 }
@@ -5898,7 +5898,7 @@ main.home-page  {
             rgba(2, 6, 11, 0.48),
             rgba(2, 6, 11, 0.58)
         ),
-        url("IMAGE/logai.jpg") center center / cover no-repeat !important;
+        url("logai.jpg") center center / cover no-repeat !important;
 
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -6144,7 +6144,7 @@ body.home-page .hero {
             rgba(2, 6, 11, 0.45),
             rgba(2, 6, 11, 0.45)
         ),
-        url("IMAGE/logai.jpg") center center / cover no-repeat !important;
+        url("logai.jpg") center center / cover no-repeat !important;
 
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -6161,7 +6161,7 @@ body.home-page .hero {
             rgba(2, 8, 16, 0.52),
             rgba(2, 8, 16, 0.66)
         ),
-        url("IMAGE/logai.jpg") center / cover no-repeat !important;
+        url("logai.jpg") center / cover no-repeat !important;
 
     position: relative;
 }
@@ -6293,7 +6293,7 @@ body.home-page .hero {
             rgba(2, 8, 16, 0.52) 55%,
             rgba(2, 8, 16, 0.15) 100%
         ),
-        url("IMAGE/fork.png") !important;
+        url("fork.png") !important;
 
     background-size: cover !important;
     background-position: center !important;
@@ -6484,7 +6484,7 @@ body.home-page main .hero {
             rgba(2, 8, 16, 0.58) 55%,
             rgba(2, 8, 16, 0.12) 100%
         ),
-        url("IMAGE/fork.png") !important;
+        url("fork.png") !important;
 
     background-size: cover !important;
     background-position: center center !important;
