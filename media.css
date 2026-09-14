@@ -1,0 +1,522 @@
+/* =========================================================
+   MEDIA PAGE
+========================================================= */
+
+body.media-body {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    color: #ffffff;
+
+    background: #020b14;
+}
+
+
+
+/* =========================================================
+   PAGE BACKGROUND
+========================================================= */
+
+.media-page {
+    position: relative;
+
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    padding:
+        125px
+        30px
+        70px;
+
+    background-image:
+        url("IMAGE/truck-blur.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+
+/* =========================================================
+   BACKGROUND DARKENING
+========================================================= */
+
+.media-bg-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(1, 9, 16, 0.42) 0%,
+            rgba(1, 9, 16, 0.50) 42%,
+            rgba(1, 9, 16, 0.72) 100%
+        );
+}
+
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.media-heading {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1450px, 100%);
+
+    margin:
+        0 auto
+        42px;
+}
+
+
+
+.media-label {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #18baff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+
+.media-heading h1 {
+    margin: 0;
+
+    font-size:
+        clamp(
+            48px,
+            5vw,
+            72px
+        );
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+
+
+.media-heading p {
+    margin:
+        18px
+        0
+        0;
+
+    color: #dce4ea;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   15 IMAGE GRID
+========================================================= */
+
+.media-gallery {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1450px, 100%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+
+
+/* =========================================================
+   PHOTO CARD
+========================================================= */
+
+.media-photo {
+    position: relative;
+
+    height: 215px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+
+    background: #071521;
+
+    border:
+        1px solid
+        rgba(29, 183, 245, 0.20);
+
+    box-shadow:
+        0 8px 24px
+        rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.28s ease,
+        border-color 0.28s ease,
+        box-shadow 0.28s ease;
+}
+
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.media-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    filter:
+        brightness(0.98)
+        contrast(1.02);
+
+    transition:
+        transform 0.45s ease,
+        filter 0.35s ease;
+}
+
+
+
+/* =========================================================
+   VERY LIGHT IMAGE OVERLAY
+========================================================= */
+
+.media-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.01),
+            rgba(0, 0, 0, 0.07)
+        );
+}
+
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.media-photo:hover {
+    z-index: 5;
+
+    transform:
+        translateY(-5px)
+        scale(1.01);
+
+    border-color:
+        rgba(24, 186, 255, 0.72);
+
+    box-shadow:
+        0 16px 40px
+        rgba(0, 0, 0, 0.40);
+}
+
+
+
+.media-photo:hover img {
+    transform:
+        scale(1.055);
+
+    filter:
+        brightness(1.08)
+        contrast(1.03);
+}
+
+
+
+/* =========================================================
+   FULLSCREEN LIGHTBOX
+========================================================= */
+
+.media-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 40px;
+
+    background:
+        rgba(0, 6, 12, 0.94);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+
+.media-lightbox.open {
+    display: flex;
+}
+
+
+
+.media-lightbox-inner {
+    width:
+        min(
+            1250px,
+            92vw
+        );
+
+    max-height: 88vh;
+
+    background: transparent;
+
+    box-shadow:
+        0 30px 100px
+        rgba(0, 0, 0, 0.75);
+}
+
+
+
+.media-lightbox-inner img {
+    display: block;
+
+    width: 100%;
+
+    max-height: 88vh;
+
+    object-fit: contain;
+
+    background: transparent;
+}
+
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.media-lightbox-close {
+    position: fixed;
+
+    z-index: 100000;
+
+    top: 25px;
+
+    right: 32px;
+
+    width: 48px;
+
+    height: 48px;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(24, 186, 255, 0.65);
+
+    background:
+        rgba(4, 20, 33, 0.82);
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+
+.media-lightbox-close:hover {
+    background: #0c5f86;
+
+    border-color: #18baff;
+}
+
+
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .media-photo {
+        height: 225px;
+    }
+
+}
+
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+    .media-gallery {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .media-gallery {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .media-page {
+        padding:
+            110px
+            20px
+            50px;
+    }
+
+
+    .media-gallery {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .media-photo {
+        height: 190px;
+    }
+
+
+    .media-heading h1 {
+        font-size: 43px;
+    }
+
+}
+
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .media-gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .media-photo {
+        height: 240px;
+    }
+
+}
+.ship-photo img {
+    object-position: center 25%;
+}
+/* SMOOTH FADE FROM HERO INTO TEAM SECTION */
+
+.about-hero::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 150px;
+
+    z-index: 3;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(7, 21, 35, 0.35) 35%,
+        rgba(7, 21, 35, 0.78) 70%,
+        #071523 100%
+    );
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media | AbdulAziz Al-Oufi Est</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+
+<body class="media-body">
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-wrap">
+
+        <div class="brand">
+
+            <div class="logo">
+                <img
+                    src="IMAGE/LOGO.jpg"
+                    alt="AbdulAziz Al-Oufi Est Logo"
+                >
+            </div>
+
+            <div class="brand-text">
+
+                <h3>
+                    AbdulAziz Al-Oufi Est
+                </h3>
+
+                <span>
+                    WAREHOUSE & LOGISTICS CONSULTING · AL KHOBAR
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="expertise.html">Expertise</a>
+           <a href="media.html" class="active">Media</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     MEDIA PAGE
+========================= -->
+
+<main class="media-page">
+
+    <div class="media-bg-overlay"></div>
+
+
+    <!-- =========================
+         HEADING
+    ========================= -->
+
+    <section class="media-heading">
+
+       
+    
+
+        <h1>
+            Operations in Focus
+        </h1>
+
+        <p>
+            A closer look at warehouse, logistics and operational environments.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         MEDIA GALLERY
+    ========================= -->
+
+    <section class="media-gallery">
+
+
+        <div class="media-photo" data-image="IMAGE/media-01.jpg">
+            <img src="IMAGE/media-01.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-02.jpg">
+            <img src="IMAGE/media-02.webp" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-03.jpg">
+            <img src="IMAGE/media-03.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-04.jpg">
+            <img src="IMAGE/media-04.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-05.jpg">
+            <img src="IMAGE/media-05.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-06.jpg">
+            <img src="IMAGE/media-06.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-07.jpg">
+            <img src="IMAGE/media-07.jpg" alt="">
+        </div>
+
+
+       <div class="media-photo ship-photo">
+    <img src="IMAGE/media-08.png" alt="">
+</div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-09.jpg">
+            <img src="IMAGE/media-09.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-10.jpg">
+            <img src="IMAGE/media-10.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-11.jpg">
+            <img src="IMAGE/media-11.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-12.jpg">
+            <img src="IMAGE/media-12.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-13.jpg">
+            <img src="IMAGE/media-13.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-14.jpg">
+            <img src="IMAGE/media-14.jpg" alt="">
+        </div>
+
+
+        <div class="media-photo" data-image="IMAGE/media-15.jpg">
+            <img src="IMAGE/media-15.jpg" alt="">
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================
+     FULLSCREEN IMAGE
+========================= -->
+
+<div class="media-lightbox" id="mediaLightbox">
+
+    <button
+        class="media-lightbox-close"
+        id="mediaLightboxClose"
+        type="button"
+    >
+        ×
+    </button>
+
+
+    <div class="media-lightbox-inner">
+
+        <img
+            id="mediaLightboxImage"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     SCRIPT
+========================= -->
+
+<script>
+
+    const mediaPhotos =
+        document.querySelectorAll(".media-photo");
+
+    const mediaLightbox =
+        document.getElementById("mediaLightbox");
+
+    const mediaLightboxImage =
+        document.getElementById("mediaLightboxImage");
+
+    const mediaClose =
+        document.getElementById("mediaLightboxClose");
+
+
+    mediaPhotos.forEach(photo => {
+
+        photo.addEventListener("click", () => {
+
+            const image =
+                photo.getAttribute("data-image");
+
+            mediaLightboxImage.src = image;
+
+            mediaLightbox.classList.add("open");
+
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+
+    mediaClose.addEventListener("click", () => {
+
+        mediaLightbox.classList.remove("open");
+
+        document.body.style.overflow = "";
+
+    });
+
+
+    mediaLightbox.addEventListener("click", event => {
+
+        if (event.target === mediaLightbox) {
+
+            mediaLightbox.classList.remove("open");
+
+            document.body.style.overflow = "";
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", event => {
+
+        if (event.key === "Escape") {
+
+            mediaLightbox.classList.remove("open");
+
+            document.body.style.overflow = "";
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
