@@ -6969,3 +6969,23 @@ body.home-page .hero-service p {
 
     transform: translateY(-2px);
 }
+/* =========================================
+   GLOBAL NAVBAR SUBTITLE - FORCE SIZE
+========================================= */
+
+.navbar .nav-wrap .brand .brand-text span {
+    display: block !important;
+
+    margin-top: 4px !important;
+
+    font-family: "Inter", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+
+    line-height: 1.25 !important;
+    letter-spacing: 1.2px !important;
+
+    color: #a9bac8 !important;
+
+    opacity: 1 !important;
+}
