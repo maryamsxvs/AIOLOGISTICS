@@ -2056,4 +2056,471 @@ body .navbar nav a.active::after {
 .team-card:nth-child(2) .team-image img {
     object-fit: cover;
     object-position: center 20%;
+}/* =========================================================
+   PROFILE LINKEDIN ICON
+========================================================= */
+
+.timeline-number-linkedin {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    padding-top: 2px;
+}
+
+
+/* NUMBER */
+
+.timeline-number-linkedin > span {
+    color: #22b9ff;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* LINKEDIN BUTTON */
+
+.timeline-linkedin {
+    position: absolute;
+
+    right: 46px;
+    top: -3px;
+
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(34, 185, 255, 0.45);
+    border-radius: 50%;
+
+    background: rgba(34, 185, 255, 0.08);
+
+    color: #22b9ff;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.timeline-linkedin svg {
+    width: 16px;
+    height: 16px;
+
+    stroke: currentColor;
+
+    stroke-width: 2;
+}
+
+
+/* HOVER */
+
+.timeline-linkedin:hover {
+    color: #ffffff;
+
+    background: #0a66c2;
+    border-color: #22b9ff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 18px rgba(34, 185, 255, 0.35);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    .timeline-number-linkedin > span {
+        font-size: 15px;
+    }
+
+    .timeline-linkedin {
+        right: 34px;
+
+        width: 27px;
+        height: 27px;
+    }
+
+    .timeline-linkedin svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+/* =========================================================
+   LINKEDIN ICON - FINAL
+========================================================= */
+
+.timeline-number-linkedin {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-top: 2px;
+}
+
+
+/* 04 NUMBER */
+
+.timeline-number-linkedin > span:not(.linkedin-letter) {
+    color: #22b9ff;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* LINKEDIN BUTTON */
+
+.timeline-linkedin {
+    position: absolute;
+
+    right: 50px;
+    top: -3px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0a66c2;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none !important;
+
+    transition: 0.25s ease;
+}
+
+
+/* ACTUAL "in" LOGO */
+
+.timeline-linkedin .linkedin-letter {
+    display: block;
+
+    color: #ffffff !important;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+    letter-spacing: -1px;
+
+    transform: translateY(1px);
+}
+
+
+/* HOVER */
+
+.timeline-linkedin:hover {
+    transform: translateY(-2px);
+
+    background: #0b75d1;
+
+    box-shadow:
+        0 0 16px rgba(34, 185, 255, 0.35);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    .timeline-number-linkedin > span:not(.linkedin-letter) {
+        font-size: 15px;
+    }
+
+    .timeline-linkedin {
+        right: 37px;
+
+        width: 27px;
+        height: 27px;
+    }
+
+    .timeline-linkedin .linkedin-letter {
+        font-size: 15px !important;
+    }
+}
+/* =========================================================
+   LINKEDIN ICON - CLEAN CIRCLE
+========================================================= */
+
+.timeline-number-linkedin {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    padding-top: 2px;
+}
+
+
+/* 04 NUMBER */
+
+.timeline-number-linkedin > span:not(.linkedin-letter) {
+    color: #22b9ff;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* LINKEDIN CIRCLE */
+
+.timeline-linkedin {
+    position: absolute;
+
+    /* MORE SPACE BETWEEN ICON AND 04 */
+    right: 72px;
+    top: -12px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(3, 16, 27, 0.92);
+
+    border: 1px solid #20baff;
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 0 16px rgba(32, 186, 255, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* WHITE "in" */
+
+.timeline-linkedin .linkedin-letter {
+    display: block;
+
+    color: #ffffff !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+    letter-spacing: -1.5px !important;
+
+    transform: translateY(1px);
+}
+
+
+/* HOVER */
+
+.timeline-linkedin:hover {
+    transform: translateY(-3px);
+
+    background: rgba(8, 35, 53, 0.98);
+
+    border-color: #46c9ff;
+
+    box-shadow:
+        0 0 22px rgba(32, 186, 255, 0.32);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    .timeline-number-linkedin > span:not(.linkedin-letter) {
+        font-size: 15px;
+    }
+
+    .timeline-linkedin {
+        right: 55px;
+        top: -8px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-linkedin .linkedin-letter {
+        font-size: 20px !important;
+    }
+}
+/* =========================================================
+   LINKEDIN PROFILE BUTTON - OPTION 1
+========================================================= */
+
+.profile-linkedin-button {
+    width: 225px;
+    height: 52px;
+
+    margin-top: 28px;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 37, 59, 0.78),
+            rgba(3, 27, 45, 0.55)
+        );
+
+    border: 1px solid #20baff;
+    border-radius: 11px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    box-shadow:
+        inset 0 0 20px rgba(32, 186, 255, 0.025);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* LINKEDIN BLUE SQUARE */
+
+.profile-linkedin-icon {
+    width: 29px;
+    height: 29px;
+
+    flex: 0 0 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #20baff;
+
+    border-radius: 3px;
+
+    color: #071523;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+
+/* LINKEDIN PROFILE TEXT */
+
+.profile-linkedin-text {
+    color: #5bcfff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* ARROW */
+
+.profile-linkedin-arrow {
+    margin-left: auto;
+
+    color: #20baff;
+
+    font-size: 26px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transform: translateY(-1px);
+
+    transition: transform 0.25s ease;
+}
+
+
+/* HOVER */
+
+.profile-linkedin-button:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 54, 84, 0.90),
+            rgba(4, 36, 58, 0.75)
+        );
+
+    border-color: #56d0ff;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.18),
+        0 0 18px rgba(32, 186, 255, 0.12);
+}
+
+
+.profile-linkedin-button:hover .profile-linkedin-arrow {
+    transform: translate(4px, -1px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .profile-linkedin-button {
+        width: 215px;
+        height: 50px;
+
+        margin-top: 25px;
+    }
+
+    .profile-linkedin-icon {
+        width: 28px;
+        height: 28px;
+
+        flex-basis: 28px;
+
+        font-size: 16px;
+    }
+
+    .profile-linkedin-text {
+        font-size: 12px;
+    }
+
 }
