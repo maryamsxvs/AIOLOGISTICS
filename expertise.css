@@ -24,7 +24,7 @@ body.expertise-body {
 
     background:
         radial-gradient(
-            circle at 55% 50%,
+            circle at 55% 48%,
             rgba(0, 174, 255, 0.08),
             transparent 40%
         ),
@@ -48,7 +48,7 @@ body.expertise-body {
     height: 600px;
 
     left: 50%;
-    top: 180px;
+    top: 150px;
 
     transform: translateX(-50%);
 
@@ -64,6 +64,17 @@ body.expertise-body {
     filter: blur(25px);
 
     pointer-events: none;
+}
+
+
+/* =========================================================
+   REMOVE DOT PATTERNS
+========================================================= */
+
+.dot-pattern,
+.dot-one,
+.dot-two {
+    display: none !important;
 }
 
 
@@ -97,7 +108,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   LEFT TEXT
+   LEFT CONTENT
 ========================================================= */
 
 .expertise-copy {
@@ -110,7 +121,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   SMALL LABEL
+   LABEL
 ========================================================= */
 
 .expertise-label {
@@ -125,7 +136,6 @@ body.expertise-body {
     color: #18bfff;
 
     font-size: 13px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -148,7 +158,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   MAIN HEADING
+   HEADING
 ========================================================= */
 
 .expertise-copy h1 {
@@ -195,7 +205,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   EXPLORE BUTTON
+   BUTTON
 ========================================================= */
 
 .expertise-button {
@@ -296,9 +306,6 @@ body.expertise-body {
 
 /* =========================================================
    LOGISTICS VISUAL
-
-   IMPORTANT:
-   WHOLE IMAGE + ALL NUMBERS MOVED UP TOGETHER
 ========================================================= */
 
 .logistics-visual {
@@ -310,19 +317,14 @@ body.expertise-body {
 
     height: 420px;
 
-    /*
-       THIS MOVES THE WHOLE LOGISTICS SECTION UP.
-       Image + 01 + 02 + 03 + 04 all move together.
-    */
-
-    margin-top: -120px;
+    margin-top: -210px;
 
     pointer-events: none;
 }
 
 
 /* =========================================================
-   LOGISTICS FLOW IMAGE
+   LOGISTICS IMAGE
 ========================================================= */
 
 .logistics-flow-image {
@@ -412,12 +414,13 @@ body.expertise-body {
 
 /* =========================================================
    04 — COST CONTROL
+   ONLY 04 HAS BEEN MOVED HIGHER
 ========================================================= */
 
 .number-04 {
     right: 7%;
 
-    bottom: 355px;
+    bottom: 395px;
 }
 
 
@@ -437,7 +440,7 @@ body.expertise-body {
 
     width: 100%;
 
-    margin-top: 5px;
+    margin-top: -65px;
 
     border-top:
         1px solid
@@ -609,11 +612,7 @@ body.expertise-body {
     .logistics-visual {
         height: 380px;
 
-        /*
-           ALSO MOVED UP ON SMALLER DESKTOP
-        */
-
-        margin-top: -95px;
+        margin-top: -180px;
     }
 
 
@@ -643,10 +642,17 @@ body.expertise-body {
     }
 
 
+    /* 04 HIGHER ON SMALL DESKTOP TOO */
+
     .number-04 {
         right: 6%;
 
-        bottom: 310px;
+        bottom: 350px;
+    }
+
+
+    .expertise-services {
+        margin-top: -45px;
     }
 
 }
@@ -681,7 +687,7 @@ body.expertise-body {
     .logistics-visual {
         height: auto;
 
-        margin: 55px 0 30px;
+        margin: 45px 0 30px;
     }
 
 
@@ -788,7 +794,7 @@ body.expertise-body {
     .logistics-visual {
         height: auto;
 
-        margin: 50px 0 30px;
+        margin: 45px 0 30px;
     }
 
 
