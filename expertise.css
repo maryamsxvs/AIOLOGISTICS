@@ -839,3 +839,24 @@ body.expertise-body .expertise-page {
             #020b14 100%
         ) !important;
 }
+/* POSITION EACH NUMBER */
+
+.number-01 {
+    left: 3%;
+    bottom: 82px;
+}
+
+.number-02 {
+    left: 28%;
+    bottom: 180px;
+}
+
+.number-03 {
+    left: 53%;
+    bottom: 275px;
+}
+
+.number-04 {
+    right: 9%;
+    bottom: 225px;
+}
