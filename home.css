@@ -863,3 +863,96 @@ body.home-page .home-benefits {
 
     z-index: 0;
 }
+/* =========================================================
+   HOME NAVBAR + HERO SPACING FIX
+========================================================= */
+
+/* Make navbar shorter */
+.navbar {
+    height: 96px !important;
+    min-height: 96px !important;
+    padding: 0 !important;
+
+    display: flex;
+    align-items: center;
+
+    background: #020b14;
+}
+
+
+/* Navbar inner container */
+.nav-wrap {
+    width: 92%;
+    max-width: 1600px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Brand */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* Logo */
+.logo img {
+    width: 56px;
+    height: 42px;
+    object-fit: contain;
+}
+
+
+/* Company name */
+.brand-text h3 {
+    margin: 0 0 4px 0;
+
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+
+/* Subtitle */
+.brand-text span {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+
+/* Navigation */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* REMOVE THE HUGE SPACE BEFORE HERO */
+.hero,
+.home-hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* Hero should begin immediately below navbar */
+.hero {
+    min-height: calc(100vh - 96px);
+
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+
+
+/* Hero content positioning */
+.hero-content {
+    padding-top: 22px !important;
+}
