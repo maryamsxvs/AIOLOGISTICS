@@ -6,13 +6,14 @@ body.expertise-body {
     margin: 0;
     padding: 0;
 
-    background: #020c16;
-    color: #ffffff;
+    background: #020c16 !important;
+    background-image: none !important;
 
+    color: #ffffff;
     font-family: "Inter", sans-serif;
 
-}
     overflow-x: hidden;
+}
 
 
 /* =========================================================
@@ -28,16 +29,16 @@ body.expertise-body {
 
     background:
         radial-gradient(
-            circle at 55% 55%,
-            rgba(0, 167, 255, 0.09),
+            circle at 55% 48%,
+            rgba(0, 174, 255, 0.09),
             transparent 38%
         ),
         linear-gradient(
             180deg,
             #020c16 0%,
-            #03101b 55%,
+            #03111d 55%,
             #020b14 100%
-        );
+        ) !important;
 }
 
 
@@ -151,7 +152,9 @@ body.expertise-body {
 }
 
 
-/* LABEL */
+/* =========================================================
+   LABEL
+========================================================= */
 
 .expertise-label {
     position: relative;
@@ -165,7 +168,6 @@ body.expertise-body {
     color: #18bfff;
 
     font-size: 13px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -344,25 +346,31 @@ body.expertise-body {
 
     height: 390px;
 
-    margin-top: -165px;
+    /*
+       IMPORTANT:
+       Was -165px.
+       Reduced negative margin gives the button/image
+       proper breathing room.
+    */
+    margin-top: -75px;
 
     pointer-events: none;
 }
 
 
-/* THE GENERATED IMAGE */
+/* =========================================================
+   GENERATED FLOW IMAGE
+========================================================= */
 
 .logistics-flow-image {
     position: absolute;
 
     width: 88%;
-
     max-width: 1380px;
 
     height: auto;
 
     right: -2%;
-
     bottom: -5px;
 
     display: block;
@@ -383,42 +391,54 @@ body.expertise-body {
 .visual-number {
     position: absolute;
 
-    z-index: 10;
+    z-index: 20;
 
     color: #18c5ff;
 
-    font-size: 20px;
+    font-size: 18px;
 
     font-weight: 700;
 
+    line-height: 1;
+
+    letter-spacing: 0.5px;
+
     text-shadow:
-        0 0 12px rgba(24, 197, 255, 0.28);
+        0 0 10px rgba(24, 197, 255, 0.35);
+
+    pointer-events: none;
 }
 
 
-/* POSITION EACH NUMBER */
+/* 01 — WAREHOUSE */
 
 .number-01 {
-    left: 3%;
-    bottom: 82px;
+    left: 20%;
+    bottom: 205px;
 }
 
+
+/* 02 — TRANSPORT */
 
 .number-02 {
-    left: 28%;
-    bottom: 180px;
+    left: 42%;
+    bottom: 245px;
 }
 
+
+/* 03 — TERMINAL */
 
 .number-03 {
-    left: 53%;
-    bottom: 275px;
+    left: 62%;
+    bottom: 315px;
 }
 
 
+/* 04 — COST CONTROL */
+
 .number-04 {
-    right: 9%;
-    bottom: 225px;
+    right: 8%;
+    bottom: 255px;
 }
 
 
@@ -438,7 +458,7 @@ body.expertise-body {
 
     width: 100%;
 
-    margin-top: -15px;
+    margin-top: 5px;
 
     border-top:
         1px solid rgba(23, 191, 255, 0.24);
@@ -462,6 +482,10 @@ body.expertise-body {
         1px solid rgba(23, 191, 255, 0.27);
 
     box-sizing: border-box;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
 
@@ -476,7 +500,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   ICON
+   SERVICE ICON
 ========================================================= */
 
 .service-icon {
@@ -541,13 +565,6 @@ body.expertise-body {
    SERVICE HOVER
 ========================================================= */
 
-.expertise-service {
-    transition:
-        background 0.3s ease,
-        transform 0.3s ease;
-}
-
-
 .expertise-service:hover {
     background:
         linear-gradient(
@@ -597,7 +614,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   LAPTOP
+   LAPTOP / SMALL DESKTOP
 ========================================================= */
 
 @media (max-width: 1250px) {
@@ -610,7 +627,11 @@ body.expertise-body {
     .logistics-visual {
         height: 350px;
 
-        margin-top: -125px;
+        /*
+           Also gives space between button and image
+           on smaller desktop screens.
+        */
+        margin-top: -40px;
     }
 
 
@@ -619,8 +640,27 @@ body.expertise-body {
     }
 
 
+    .number-01 {
+        left: 19%;
+        bottom: 185px;
+    }
+
+
+    .number-02 {
+        left: 41%;
+        bottom: 220px;
+    }
+
+
     .number-03 {
-        bottom: 245px;
+        left: 61%;
+        bottom: 280px;
+    }
+
+
+    .number-04 {
+        right: 7%;
+        bottom: 230px;
     }
 
 }
@@ -650,7 +690,10 @@ body.expertise-body {
     .logistics-visual {
         height: 360px;
 
-        margin-top: 25px;
+        /*
+           Proper visible gap after button.
+        */
+        margin-top: 55px;
     }
 
 
@@ -679,6 +722,8 @@ body.expertise-body {
     .expertise-services {
         grid-template-columns:
             repeat(2, 1fr);
+
+        margin-top: 20px;
     }
 
 
@@ -730,32 +775,48 @@ body.expertise-body {
     }
 
 
-    /* 3D IMAGE */
+    /* =====================================================
+       MOBILE 3D IMAGE
+    ====================================================== */
 
     .logistics-visual {
         height: auto;
 
+        /*
+           Nice gap between full-width button
+           and logistics artwork.
+        */
         margin:
-            45px 0
-            20px;
+            60px 0
+            25px;
     }
 
 
     .logistics-flow-image {
+        position: relative;
+
         width: 145%;
 
+        max-width: none;
+
         left: 50%;
+
+        right: auto;
+
+        bottom: auto;
 
         transform: translateX(-50%);
     }
 
 
-    /* SERVICES */
+    /* =====================================================
+       MOBILE SERVICES
+    ====================================================== */
 
     .expertise-services {
         grid-template-columns: 1fr;
 
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
 
@@ -799,110 +860,4 @@ body.expertise-body {
         letter-spacing: 1.4px;
     }
 
-}
-/* =========================================================
-   EXPERTISE PAGE ONLY — REMOVE GLOBAL TRUCK BACKGROUND
-========================================================= */
-
-body.expertise-body {
-    background: #020c16 !important;
-    background-image: none !important;
-}
-
-
-/* Expertise gets its own dark background */
-
-body.expertise-body .expertise-page {
-    background:
-        radial-gradient(
-            circle at 55% 48%,
-            rgba(0, 174, 255, 0.09),
-            transparent 38%
-        ),
-        linear-gradient(
-            180deg,
-            #020c16 0%,
-            #03111d 55%,
-            #020b14 100%
-        ) !important;
-
-    background-image:
-        radial-gradient(
-            circle at 55% 48%,
-            rgba(0, 174, 255, 0.09),
-            transparent 38%
-        ),
-        linear-gradient(
-            180deg,
-            #020c16 0%,
-            #03111d 55%,
-            #020b14 100%
-        ) !important;
-}
-/* POSITION EACH NUMBER */
-
-.number-01 {
-    left: 3%;
-    bottom: 82px;
-}
-
-.number-02 {
-    left: 28%;
-    bottom: 180px;
-}
-
-.number-03 {
-    left: 53%;
-    bottom: 275px;
-}
-
-.number-04 {
-    right: 9%;
-    bottom: 225px;
-}
-/* =========================================================
-   NUMBERS — PROPERLY ALIGNED TO 3D OBJECTS
-========================================================= */
-
-.visual-number {
-    position: absolute;
-    z-index: 20;
-
-    color: #18c5ff;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1;
-
-    text-shadow:
-        0 0 10px rgba(24, 197, 255, 0.35);
-
-    pointer-events: none;
-}
-
-
-/* 01 — WAREHOUSE */
-.number-01 {
-    left: 20%;
-    bottom: 225px;
-}
-
-
-/* 02 — TRANSPORT */
-.number-02 {
-    left: 42%;
-    bottom: 260px;
-}
-
-
-/* 03 — TERMINAL */
-.number-03 {
-    left: 62%;
-    bottom: 330px;
-}
-
-
-/* 04 — COST CONTROL */
-.number-04 {
-    right: 8%;
-    bottom: 275px;
 }
