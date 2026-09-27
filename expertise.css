@@ -11,8 +11,8 @@ body.expertise-body {
 
     font-family: "Inter", sans-serif;
 
-    overflow-x: hidden;
 }
+    overflow-x: hidden;
 
 
 /* =========================================================
@@ -859,4 +859,50 @@ body.expertise-body .expertise-page {
 .number-04 {
     right: 9%;
     bottom: 225px;
+}
+/* =========================================================
+   NUMBERS — PROPERLY ALIGNED TO 3D OBJECTS
+========================================================= */
+
+.visual-number {
+    position: absolute;
+    z-index: 20;
+
+    color: #18c5ff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+
+    text-shadow:
+        0 0 10px rgba(24, 197, 255, 0.35);
+
+    pointer-events: none;
+}
+
+
+/* 01 — WAREHOUSE */
+.number-01 {
+    left: 20%;
+    bottom: 225px;
+}
+
+
+/* 02 — TRANSPORT */
+.number-02 {
+    left: 42%;
+    bottom: 260px;
+}
+
+
+/* 03 — TERMINAL */
+.number-03 {
+    left: 62%;
+    bottom: 330px;
+}
+
+
+/* 04 — COST CONTROL */
+.number-04 {
+    right: 8%;
+    bottom: 275px;
 }
