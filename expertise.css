@@ -862,3 +862,296 @@ body.expertise-body {
         letter-spacing: 1.4px;
     }
 }
+/* =========================================================
+   FINAL EXPERTISE FIX
+   REMOVE ALL BACKGROUND IMAGES
+========================================================= */
+
+html,
+body.expertise-body {
+    background: #020c16 !important;
+    background-image: none !important;
+}
+
+body.expertise-body::before,
+body.expertise-body::after {
+    content: none !important;
+    display: none !important;
+    background-image: none !important;
+}
+
+.expertise-page {
+    position: relative !important;
+
+    background: #020c16 !important;
+    background-image: none !important;
+
+    overflow: hidden !important;
+}
+
+.expertise-page::before,
+.expertise-page::after {
+    content: none !important;
+    display: none !important;
+    background-image: none !important;
+}
+
+.expertise-container {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+
+/* REMOVE ANY OLD BACKGROUND ELEMENTS */
+
+.truck-blur,
+.truck-bg,
+.background-truck,
+.hero-background,
+.page-background,
+.expertise-background {
+    display: none !important;
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   REMOVE DOTS
+========================================================= */
+
+.dot-pattern,
+.dot-one,
+.dot-two {
+    display: none !important;
+}
+
+
+/* =========================================================
+   LOGISTICS IMAGE AREA
+========================================================= */
+
+.logistics-visual {
+    position: relative !important;
+
+    z-index: 4 !important;
+
+    width: 100% !important;
+
+    height: 440px !important;
+
+    /*
+       keeps space between button and image
+    */
+    margin-top: -115px !important;
+
+    /*
+       THIS creates breathing room before services
+    */
+    margin-bottom: 55px !important;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   LOGISTICS IMAGE
+========================================================= */
+
+.logistics-flow-image {
+    position: absolute !important;
+
+    width: 88% !important;
+    max-width: 1380px !important;
+
+    height: auto !important;
+
+    right: -2% !important;
+
+    /*
+       lift image slightly inside its container
+    */
+    bottom: 15px !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+
+    background: transparent !important;
+
+    filter:
+        drop-shadow(
+            0 22px 28px
+            rgba(0, 0, 0, 0.38)
+        ) !important;
+}
+
+
+/* =========================================================
+   NUMBERS
+========================================================= */
+
+.visual-number {
+    position: absolute !important;
+
+    z-index: 20 !important;
+
+    color: #18c5ff !important;
+
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+
+    text-shadow:
+        0 0 10px
+        rgba(24, 197, 255, 0.35) !important;
+}
+
+
+/* 01 */
+
+.number-01 {
+    left: 22% !important;
+    bottom: 225px !important;
+}
+
+
+/* 02 */
+
+.number-02 {
+    left: 43% !important;
+    bottom: 275px !important;
+}
+
+
+/* 03 */
+
+.number-03 {
+    left: 63% !important;
+    bottom: 350px !important;
+}
+
+
+/* 04 */
+
+.number-04 {
+    right: 7% !important;
+    bottom: 415px !important;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.expertise-services {
+    position: relative !important;
+
+    z-index: 8 !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+
+    /*
+       IMPORTANT:
+       old CSS had negative margin here.
+       That's why services were touching the image.
+    */
+
+    margin-top: 0 !important;
+
+    border-top:
+        1px solid
+        rgba(23, 191, 255, 0.24) !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.expertise-service {
+    position: relative;
+
+    min-height: 180px;
+
+    padding: 28px 35px 22px;
+
+    box-sizing: border-box;
+
+    background: transparent !important;
+
+    border-right:
+        1px solid
+        rgba(23, 191, 255, 0.25);
+}
+
+.expertise-service:first-child {
+    padding-left: 0;
+}
+
+.expertise-service:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   SERVICE ICONS
+========================================================= */
+
+.service-icon {
+    margin-bottom: 14px;
+}
+
+.service-icon svg {
+    width: 34px;
+    height: 34px;
+
+    stroke: #18c5ff;
+
+    stroke-width: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE TITLES
+========================================================= */
+
+.expertise-service h2 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.expertise-service p {
+    max-width: 260px;
+
+    margin: 0;
+
+    color: #9eb1bf;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
