@@ -656,3 +656,34 @@
     }
 
 }
+/* =========================================
+   REMOVE EXPERTISE BACKGROUND IMAGE
+========================================= */
+
+body.expertise-body,
+.expertise-page {
+    background: #00101b !important;
+    background-image: none !important;
+}
+
+/* Kill any background image coming from pseudo-elements */
+.expertise-page::before,
+.expertise-page::after,
+.expertise-body::before,
+.expertise-body::after {
+    background-image: none !important;
+}
+
+/* Remove old truck / warehouse background layers */
+.truck-blur,
+.expertise-background,
+.expertise-bg,
+.background-image,
+.hero-background {
+    display: none !important;
+}
+
+/* Keep the actual logistics flow image */
+.logistics-flow-image {
+    display: block !important;
+}
