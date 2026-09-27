@@ -5,27 +5,21 @@
 body.expertise-body {
     margin: 0;
     padding: 0;
-
     background: #020c16 !important;
     background-image: none !important;
-
     color: #ffffff;
-
     font-family: "Inter", sans-serif;
-
     overflow-x: hidden;
 }
 
 
 /* =========================================================
-   MAIN PAGE BACKGROUND
+   MAIN PAGE
 ========================================================= */
 
 .expertise-page {
     position: relative;
-
     min-height: calc(100vh - 110px);
-
     overflow: hidden;
 
     background:
@@ -44,7 +38,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   SUBTLE BLUE GLOW
+   BACKGROUND GLOW
 ========================================================= */
 
 .expertise-glow {
@@ -74,24 +68,18 @@ body.expertise-body {
 
 
 /* =========================================================
-   MAIN CONTAINER
+   CONTAINER
 ========================================================= */
 
 .expertise-container {
     position: relative;
-
     z-index: 3;
 
-    width: min(
-        1540px,
-        calc(100% - 100px)
-    );
+    width: min(1540px, calc(100% - 100px));
 
     margin: 0 auto;
 
-    padding:
-        55px 0
-        28px;
+    padding: 55px 0 28px;
 
     box-sizing: border-box;
 }
@@ -103,18 +91,16 @@ body.expertise-body {
 
 .expertise-intro-area {
     position: relative;
-
     min-height: 300px;
 }
 
 
 /* =========================================================
-   LEFT COPY
+   LEFT TEXT
 ========================================================= */
 
 .expertise-copy {
     position: relative;
-
     z-index: 10;
 
     width: 620px;
@@ -130,16 +116,13 @@ body.expertise-body {
 
     display: inline-block;
 
-    margin:
-        0 0
-        18px;
+    margin: 0 0 18px;
 
     padding-bottom: 11px;
 
     color: #18bfff;
 
     font-size: 13px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -162,7 +145,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   MAIN HEADING
+   HEADING
 ========================================================= */
 
 .expertise-copy h1 {
@@ -172,12 +155,7 @@ body.expertise-body {
 
     color: #ffffff;
 
-    font-size:
-        clamp(
-            50px,
-            4vw,
-            67px
-        );
+    font-size: clamp(50px, 4vw, 67px);
 
     line-height: 0.98;
 
@@ -195,21 +173,17 @@ body.expertise-body {
 
 
 /* =========================================================
-   INTRO TEXT
+   INTRO PARAGRAPH
 ========================================================= */
 
 .expertise-intro {
     max-width: 560px;
 
-    margin:
-        28px 0
-        0;
+    margin: 28px 0 0;
 
     color: #c5d1da;
 
-    font-family:
-        "Manrope",
-        sans-serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: 14px;
 
@@ -218,7 +192,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   BUTTON
+   EXPLORE BUTTON
 ========================================================= */
 
 .expertise-button {
@@ -234,16 +208,13 @@ body.expertise-body {
 
     margin-top: 30px;
 
-    padding:
-        18px 25px;
+    padding: 18px 25px;
 
     color: #00111b;
 
     background: #29c4eb;
 
-    border:
-        1px solid
-        #29c4eb;
+    border: 1px solid #29c4eb;
 
     text-decoration: none;
 
@@ -261,19 +232,13 @@ body.expertise-body {
 
 
 .expertise-button:hover {
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     background: #55dcff;
 
     box-shadow:
         0 12px 35px
-        rgba(
-            0,
-            190,
-            255,
-            0.22
-        );
+        rgba(0, 190, 255, 0.22);
 }
 
 
@@ -322,17 +287,12 @@ body.expertise-body {
 
     box-shadow:
         0 0 10px
-        rgba(
-            24,
-            186,
-            255,
-            0.4
-        );
+        rgba(24, 186, 255, 0.4);
 }
 
 
 /* =========================================================
-   3D LOGISTICS VISUAL
+   LOGISTICS IMAGE AREA
 ========================================================= */
 
 .logistics-visual {
@@ -345,8 +305,8 @@ body.expertise-body {
     height: 420px;
 
     /*
-       Gives the button and image
-       more breathing room.
+       Keeps space between the Explore button
+       and the actual logistics image.
     */
     margin-top: -45px;
 
@@ -355,7 +315,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   3D FLOW IMAGE
+   LOGISTICS FLOW IMAGE
 ========================================================= */
 
 .logistics-flow-image {
@@ -378,12 +338,7 @@ body.expertise-body {
     filter:
         drop-shadow(
             0 25px 30px
-            rgba(
-                0,
-                0,
-                0,
-                0.40
-            )
+            rgba(0, 0, 0, 0.40)
         );
 }
 
@@ -409,12 +364,7 @@ body.expertise-body {
 
     text-shadow:
         0 0 10px
-        rgba(
-            24,
-            197,
-            255,
-            0.35
-        );
+        rgba(24, 197, 255, 0.35);
 
     pointer-events: none;
 }
@@ -426,7 +376,6 @@ body.expertise-body {
 
 .number-01 {
     left: 22%;
-
     bottom: 205px;
 }
 
@@ -437,7 +386,6 @@ body.expertise-body {
 
 .number-02 {
     left: 43%;
-
     bottom: 255px;
 }
 
@@ -448,13 +396,15 @@ body.expertise-body {
 
 .number-03 {
     left: 63%;
-
     bottom: 330px;
 }
 
 
 /* =========================================================
-   04 — COST CONTROL / LAPTOP
+   04 — COST CONTROL
+
+   Positioned ABOVE the laptop instead of
+   sitting over the laptop screen.
 ========================================================= */
 
 .number-04 {
@@ -464,7 +414,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   SERVICES
+   SERVICES SECTION
 ========================================================= */
 
 .expertise-services {
@@ -475,10 +425,7 @@ body.expertise-body {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            4,
-            minmax(0, 1fr)
-        );
+        repeat(4, minmax(0, 1fr));
 
     width: 100%;
 
@@ -486,17 +433,12 @@ body.expertise-body {
 
     border-top:
         1px solid
-        rgba(
-            23,
-            191,
-            255,
-            0.24
-        );
+        rgba(23, 191, 255, 0.24);
 }
 
 
 /* =========================================================
-   EACH SERVICE
+   SERVICE
 ========================================================= */
 
 .expertise-service {
@@ -504,18 +446,11 @@ body.expertise-body {
 
     min-height: 180px;
 
-    padding:
-        25px 30px
-        20px;
+    padding: 25px 30px 20px;
 
     border-right:
         1px solid
-        rgba(
-            23,
-            191,
-            255,
-            0.27
-        );
+        rgba(23, 191, 255, 0.27);
 
     box-sizing: border-box;
 
@@ -536,7 +471,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   SERVICE ICONS
+   SERVICE ICON
 ========================================================= */
 
 .service-icon {
@@ -546,7 +481,6 @@ body.expertise-body {
 
 .service-icon svg {
     width: 34px;
-
     height: 34px;
 
     stroke: #18c5ff;
@@ -556,30 +490,21 @@ body.expertise-body {
     filter:
         drop-shadow(
             0 0 8px
-            rgba(
-                24,
-                197,
-                255,
-                0.25
-            )
+            rgba(24, 197, 255, 0.25)
         );
 }
 
 
 /* =========================================================
-   SERVICE TITLES
+   SERVICE TITLE
 ========================================================= */
 
 .expertise-service h2 {
-    margin:
-        0 0
-        9px;
+    margin: 0 0 9px;
 
     color: #ffffff;
 
-    font-family:
-        "Manrope",
-        sans-serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: 18px;
 
@@ -590,7 +515,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   SERVICE TEXT
+   SERVICE DESCRIPTION
 ========================================================= */
 
 .expertise-service p {
@@ -600,9 +525,7 @@ body.expertise-body {
 
     color: #9eb1bf;
 
-    font-family:
-        "Manrope",
-        sans-serif;
+    font-family: "Manrope", sans-serif;
 
     font-size: 12px;
 
@@ -618,22 +541,16 @@ body.expertise-body {
     background:
         linear-gradient(
             180deg,
-            rgba(
-                20,
-                180,
-                240,
-                0.07
-            ),
+            rgba(20, 180, 240, 0.07),
             transparent
         );
 
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
 }
 
 
 /* =========================================================
-   BOTTOM LINE
+   BOTTOM TEXT LINE
 ========================================================= */
 
 .expertise-footer-line {
@@ -649,7 +566,6 @@ body.expertise-body {
 
 .expertise-footer-line span {
     width: 55px;
-
     height: 2px;
 
     background: #18c5ff;
@@ -670,16 +586,13 @@ body.expertise-body {
 
 
 /* =========================================================
-   SMALL DESKTOP / LAPTOP
+   SMALL DESKTOP
 ========================================================= */
 
 @media (max-width: 1250px) {
 
     .expertise-container {
-        width:
-            calc(
-                100% - 70px
-            );
+        width: calc(100% - 70px);
     }
 
 
@@ -697,29 +610,25 @@ body.expertise-body {
 
     .number-01 {
         left: 20%;
-
         bottom: 190px;
     }
 
 
     .number-02 {
         left: 42%;
-
         bottom: 230px;
     }
 
 
     .number-03 {
         left: 61%;
-
         bottom: 290px;
     }
 
 
     .number-04 {
-        right: 9%;
-
-        bottom: 255px;
+        right: 6%;
+        bottom: 310px;
     }
 
 }
@@ -732,10 +641,7 @@ body.expertise-body {
 @media (max-width: 950px) {
 
     .expertise-container {
-        width:
-            calc(
-                100% - 50px
-            );
+        width: calc(100% - 50px);
     }
 
 
@@ -757,9 +663,7 @@ body.expertise-body {
     .logistics-visual {
         height: auto;
 
-        margin:
-            70px 0
-            30px;
+        margin: 70px 0 30px;
     }
 
 
@@ -773,14 +677,19 @@ body.expertise-body {
         height: auto;
 
         right: auto;
+
         left: 50%;
 
         bottom: auto;
 
-        transform:
-            translateX(-50%);
+        transform: translateX(-50%);
     }
 
+
+    /*
+       Numbers hidden on tablet because
+       image proportions change significantly.
+    */
 
     .visual-number {
         display: none;
@@ -789,10 +698,7 @@ body.expertise-body {
 
     .expertise-services {
         grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
+            repeat(2, 1fr);
 
         margin-top: 20px;
     }
@@ -806,12 +712,7 @@ body.expertise-body {
     .expertise-service:nth-child(-n+2) {
         border-bottom:
             1px solid
-            rgba(
-                23,
-                191,
-                255,
-                0.22
-            );
+            rgba(23, 191, 255, 0.22);
     }
 
 }
@@ -824,10 +725,7 @@ body.expertise-body {
 @media (max-width: 650px) {
 
     .expertise-container {
-        width:
-            calc(
-                100% - 32px
-            );
+        width: calc(100% - 32px);
 
         padding-top: 40px;
     }
@@ -870,16 +768,14 @@ body.expertise-body {
     }
 
 
-    /* =====================================================
-       MOBILE 3D IMAGE
-    ====================================================== */
+    /* ===============================
+       MOBILE IMAGE
+    =============================== */
 
     .logistics-visual {
         height: auto;
 
-        margin:
-            65px 0
-            30px;
+        margin: 65px 0 30px;
     }
 
 
@@ -898,8 +794,7 @@ body.expertise-body {
 
         bottom: auto;
 
-        transform:
-            translateX(-50%);
+        transform: translateX(-50%);
     }
 
 
@@ -908,9 +803,9 @@ body.expertise-body {
     }
 
 
-    /* =====================================================
+    /* ===============================
        MOBILE SERVICES
-    ====================================================== */
+    =============================== */
 
     .expertise-services {
         grid-template-columns: 1fr;
@@ -922,20 +817,13 @@ body.expertise-body {
     .expertise-service {
         min-height: 0;
 
-        padding:
-            24px 5px
-            27px;
+        padding: 24px 5px 27px;
 
         border-right: none;
 
         border-bottom:
             1px solid
-            rgba(
-                23,
-                191,
-                255,
-                0.22
-            );
+            rgba(23, 191, 255, 0.22);
     }
 
 
