@@ -800,3 +800,42 @@ body.expertise-body {
     }
 
 }
+/* =========================================================
+   EXPERTISE PAGE ONLY — REMOVE GLOBAL TRUCK BACKGROUND
+========================================================= */
+
+body.expertise-body {
+    background: #020c16 !important;
+    background-image: none !important;
+}
+
+
+/* Expertise gets its own dark background */
+
+body.expertise-body .expertise-page {
+    background:
+        radial-gradient(
+            circle at 55% 48%,
+            rgba(0, 174, 255, 0.09),
+            transparent 38%
+        ),
+        linear-gradient(
+            180deg,
+            #020c16 0%,
+            #03111d 55%,
+            #020b14 100%
+        ) !important;
+
+    background-image:
+        radial-gradient(
+            circle at 55% 48%,
+            rgba(0, 174, 255, 0.09),
+            transparent 38%
+        ),
+        linear-gradient(
+            180deg,
+            #020c16 0%,
+            #03111d 55%,
+            #020b14 100%
+        ) !important;
+}
