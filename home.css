@@ -915,7 +915,7 @@ body.home-page .home-hero-overlay {
 
 
 /* =========================================================
-   NAVBAR OVER THE IMAGE
+   NAVBAR OVER HERO — DARK BLURRED GLASS
 ========================================================= */
 
 body.home-page header.navbar {
@@ -929,33 +929,20 @@ body.home-page header.navbar {
 
     z-index: 9999 !important;
 
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
+    /* dark transparent glass */
+    background: rgba(0, 7, 14, 0.48) !important;
 
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    /* blur warehouse behind navbar */
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    border-bottom: 1px solid rgba(110, 180, 215, 0.15) !important;
 }
 
 
-/* REMOVE BACKGROUND FROM NAVBAR INNER WRAPPER TOO */
+/* keep navbar inner area transparent */
 body.home-page header.navbar .nav-wrap {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
-}
-
-
-/* =========================================================
-   KEEP HERO CONTENT ABOVE OVERLAY
-========================================================= */
-
-body.home-page .home-hero-content {
-    position: relative !important;
-
-    z-index: 3 !important;
-
-    min-height: 100vh !important;
-
-    padding-top: 120px !important;
 }
