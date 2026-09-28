@@ -7241,3 +7241,281 @@ body.home-page .home-hero {
     padding-top: 110px !important;
     min-height: 100vh;
 }
+/* =========================================================
+   FINAL GLOBAL NAVBAR
+   DO NOT STYLE NAVBAR INSIDE INDIVIDUAL PAGE CSS FILES
+========================================================= */
+
+body .navbar {
+    position: relative !important;
+    z-index: 9999 !important;
+
+    width: 100% !important;
+    height: 112px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    background: #020b14 !important;
+
+    border-bottom: 1px solid rgba(130, 170, 200, 0.16) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* SAME CONTENT WIDTH EVERYWHERE */
+
+body .navbar .nav-wrap {
+    width: 100% !important;
+    max-width: 1740px !important;
+
+    height: 112px !important;
+
+    margin: 0 auto !important;
+    padding: 0 70px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    box-sizing: border-box !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+body .navbar .brand {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+body .navbar .logo {
+    width: 56px !important;
+    height: 44px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 56px !important;
+}
+
+
+body .navbar .logo img {
+    display: block !important;
+
+    width: 56px !important;
+    height: 44px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: contain !important;
+}
+
+
+body .navbar .brand-text {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+body .navbar .brand-text h3 {
+    margin: 0 0 7px 0 !important;
+    padding: 0 !important;
+
+    color: #ffffff !important;
+
+    font-size: 25px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+}
+
+
+body .navbar .brand-text span {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #aebdca !important;
+
+    font-size: 17px !important;
+    font-weight: 500 !important;
+
+    line-height: 1 !important;
+    letter-spacing: 1.5px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+body .navbar nav {
+    height: 112px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 42px !important;
+}
+
+
+body .navbar nav a {
+    position: relative !important;
+
+    height: 112px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    color: #d8dde3 !important;
+
+    font-size: 17px !important;
+    font-weight: 400 !important;
+
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+
+    white-space: nowrap !important;
+}
+
+
+body .navbar nav a:hover,
+body .navbar nav a.active {
+    color: #18bfff !important;
+}
+
+
+/* ACTIVE UNDERLINE */
+
+body .navbar nav a.active::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+
+    bottom: 25px !important;
+
+    width: 100% !important;
+    height: 3px !important;
+
+    margin: 0 !important;
+
+    background: #19c2ff !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* =========================================================
+   HOME ONLY
+   SAME SIZE + SPACING — ONLY ALLOW BACKGROUND THROUGH
+========================================================= */
+
+body.home-page .navbar {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    background: rgba(1, 8, 17, 0.64) !important;
+
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    body .navbar .nav-wrap {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+    body .navbar nav {
+        gap: 24px !important;
+    }
+
+    body .navbar .brand-text span {
+        font-size: 13px !important;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    body .navbar {
+        height: auto !important;
+    }
+
+    body .navbar .nav-wrap {
+        height: auto !important;
+
+        padding: 18px 20px !important;
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 18px !important;
+    }
+
+    body .navbar nav {
+        width: 100% !important;
+        height: auto !important;
+
+        justify-content: space-between !important;
+
+        gap: 12px !important;
+    }
+
+    body .navbar nav a {
+        height: 42px !important;
+
+        font-size: 14px !important;
+    }
+
+    body .navbar nav a.active::after {
+        bottom: 0 !important;
+    }
+
+    body .navbar .brand-text span {
+        white-space: normal !important;
+        line-height: 1.35 !important;
+    }
+}
