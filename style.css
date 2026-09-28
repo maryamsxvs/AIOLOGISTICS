@@ -7208,3 +7208,30 @@ body.home-page .home-hero-content {
     padding-top: 0 !important;
     margin-top: -10px !important;
 }
+/* =========================================
+   HERO BG STARTS FROM TOP OF SCREEN
+========================================= */
+
+.navbar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    border-bottom: 1px solid rgba(255,255,255,0.10) !important;
+
+    z-index: 1000 !important;
+}
+
+.navbar .nav-wrap {
+    background: transparent !important;
+}
+
+/* Hero now starts at the actual top */
+.hero {
+    margin-top: 0 !important;
+    padding-top: 86px !important;
+}
