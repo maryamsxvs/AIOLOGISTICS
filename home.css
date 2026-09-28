@@ -897,3 +897,53 @@ body.home-page .home-hero-content {
 
     padding-top: 150px !important;
 }
+/* =========================================================
+   HOME ONLY — BACKGROUND BEHIND NAVBAR
+========================================================= */
+
+/* Navbar must float over the hero */
+body.home-page header.navbar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    z-index: 9999 !important;
+}
+
+
+/* style.css ALSO gives this a background — remove it */
+body.home-page header.navbar .nav-wrap {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+/* Actual hero class from YOUR HTML */
+body.home-page main .home-hero {
+    position: relative !important;
+
+    margin: 0 !important;
+
+    width: 100% !important;
+    min-height: 100vh !important;
+
+    background-image: url("fork.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* Keep text from hiding behind the navbar */
+body.home-page .home-hero-content {
+    min-height: 100vh !important;
+    padding-top: 120px !important;
+}
