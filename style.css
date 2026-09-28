@@ -7171,43 +7171,7 @@ body.home-page .hero-service p {
     }
 
 
-    /* HERO STARTS AFTER NAVBAR */
-    body.home-page main {
-        padding-top: 110px !important;
-    }
-
-    .home-hero-content {
-        padding-top: 45px !important;
-    }
-/* REDUCE GAP BETWEEN NAVBAR AND HERO CONTENT */
-
-body.home-page .home-hero-content {
-    padding-top: 15px !important;
-}
-
-body.home-page .home-hero {
-    padding-top: 0 !important;
-}
-/* FIX HUGE GAP ABOVE HERO CONTENT */
-
-body.home-page .home-hero-content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-}
-
-body.home-page .home-hero {
-    padding-top: 20px !important;
-}
-/* HERO MUCH CLOSER TO NAVBAR */
-
-body.home-page .home-hero {
-    padding-top: 0 !important;
-}
-
-body.home-page .home-hero-content {
-    padding-top: 0 !important;
-    margin-top: -10px !important;
-}
+   
 /* =========================================
    HERO BG STARTS FROM TOP OF SCREEN
 ========================================= */
@@ -7234,4 +7198,46 @@ body.home-page .home-hero-content {
 .hero {
     margin-top: 0 !important;
     padding-top: 86px !important;
+}
+/* =====================================================
+   HOME PAGE NAVBAR — CLEAN FINAL VERSION
+===================================================== */
+
+body.home-page {
+    margin: 0;
+}
+
+body.home-page main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Navbar sits ON TOP of hero image */
+body.home-page .navbar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    z-index: 1000 !important;
+}
+
+/* Remove second navbar background */
+body.home-page .navbar .nav-wrap {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Actual home hero */
+body.home-page .home-hero {
+    position: relative;
+    margin: 0 !important;
+    padding-top: 110px !important;
+    min-height: 100vh;
 }
