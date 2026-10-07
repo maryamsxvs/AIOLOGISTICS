@@ -7576,3 +7576,112 @@ body .navbar nav a.active::after {
     background: #19c2ff !important;
     border-radius: 10px !important;
 }
+
+/* =========================================================
+   CONSISTENT NAVBAR — ALL PAGES (FINAL CANONICAL LAYOUT)
+   Keep page-specific glass/background effects unchanged.
+========================================================= */
+body header.navbar, body .navbar {
+    width: 100% !important;
+    height: 112px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+body header.navbar .nav-wrap, body .navbar .nav-wrap {
+    width: 100% !important;
+    max-width: 1740px !important;
+    height: 112px !important;
+    margin: 0 auto !important;
+    padding: 0 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    gap: 24px !important;
+    background: transparent !important;
+}
+body .navbar .brand {
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 1 auto !important;
+    gap: 16px !important;
+    margin: 0 !important;
+}
+body .navbar .logo, body .navbar .logo img {
+    width: 56px !important;
+    height: 44px !important;
+}
+body .navbar .logo { flex: 0 0 56px !important; }
+body .navbar .logo img { object-fit: contain !important; }
+body .navbar .brand-text { margin: 0 !important; }
+body .navbar .brand-text h3 {
+    margin: 0 0 7px !important;
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+}
+body .navbar .brand-text span {
+    font-size: 17px !important;
+    letter-spacing: 1.5px !important;
+    white-space: nowrap !important;
+}
+body .navbar nav, body .navbar nav#mainNav {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    height: 112px !important;
+    gap: 42px !important;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+}
+body .navbar nav a, body .navbar nav#mainNav a {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 112px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 17px !important;
+    white-space: nowrap !important;
+}
+body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 44px !important;
+    height: 3px !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 25px !important;
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+    background: #19c2ff !important;
+    border-radius: 10px !important;
+}
+@media (max-width: 1250px) {
+    body .navbar .nav-wrap { padding-left: 35px !important; padding-right: 35px !important; }
+    body .navbar nav, body .navbar nav#mainNav { gap: 22px !important; }
+    body .navbar .brand-text span { font-size: 13px !important; }
+}
+@media (max-width: 900px) {
+    body header.navbar, body .navbar { height: auto !important; min-height: 112px !important; }
+    body .navbar .nav-wrap {
+        height: auto !important;
+        padding: 18px 20px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 18px !important;
+    }
+    body .navbar nav, body .navbar nav#mainNav {
+        width: 100% !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        gap: 12px !important;
+    }
+    body .navbar nav a, body .navbar nav#mainNav a { height: 42px !important; font-size: 14px !important; }
+    body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after { bottom: 0 !important; }
+    body .navbar .brand-text span { white-space: normal !important; line-height: 1.35 !important; }
+}
