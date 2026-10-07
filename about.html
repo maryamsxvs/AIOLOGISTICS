@@ -44,11 +44,8 @@
                     AbdulAziz Al-Oufi Est
                 </h3>
 
-                <span class="desktop-subtitle">
-                    LOGISTICS &amp; WAREHOUSE CONSULTANTS · AL KHOBAR
-                </span>
-                <span class="mobile-subtitle">
-                    LOGISTICS &amp; WAREHOUSE CONSULTANTS
+               <span>
+                   LOGISTICS & WAREHOUSE CONSULTANTS · AL KHOBAR
                 </span>
 
             </div>
@@ -1107,4 +1104,49 @@
                         process analysis and user support.
                     </p>
 
-       
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+====================================================== -->
+
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+<script>
+const menuToggle=document.querySelector(".menu-toggle");
+const mainNav=document.getElementById("mainNav");
+if(menuToggle&&mainNav){
+ menuToggle.addEventListener("click",function(){
+  const open=mainNav.classList.toggle("mobile-open");
+  menuToggle.classList.toggle("is-open",open);
+  menuToggle.setAttribute("aria-expanded",String(open));
+ });
+ mainNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",function(){
+  mainNav.classList.remove("mobile-open");
+  menuToggle.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded","false");
+ }));
+}
+</script>
+
+</body>
+
+</html>
