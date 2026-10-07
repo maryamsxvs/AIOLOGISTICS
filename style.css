@@ -7519,3 +7519,18 @@ body.home-page .navbar {
         line-height: 1.35 !important;
     }
 }
+body .navbar nav a.active::after {
+    content: "";
+    position: absolute;
+
+    width: 44px;
+    height: 3px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: 25px;
+
+    background: #19c2ff;
+    border-radius: 10px;
+}
