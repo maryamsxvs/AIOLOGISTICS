@@ -7685,3 +7685,137 @@ body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after {
     body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after { bottom: 0 !important; }
     body .navbar .brand-text span { white-space: normal !important; line-height: 1.35 !important; }
 }
+/* =========================================================
+   CONTACT PAGE — NAVBAR FIX
+   Matches the final navbar used on the other pages
+========================================================= */
+
+body.contact-page header.navbar,
+body.contact-page .navbar {
+    width: 100% !important;
+    height: 112px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    background: #020b14 !important;
+    border-bottom: 1px solid rgba(130, 170, 200, 0.16) !important;
+}
+
+body.contact-page .navbar .nav-wrap {
+    width: 100% !important;
+    max-width: 1740px !important;
+    height: 112px !important;
+
+    margin: 0 auto !important;
+    padding: 0 70px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 24px !important;
+}
+
+body.contact-page .navbar .brand {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.contact-page .navbar .logo {
+    width: 56px !important;
+    height: 44px !important;
+
+    flex: 0 0 56px !important;
+}
+
+body.contact-page .navbar .logo img {
+    width: 56px !important;
+    height: 44px !important;
+
+    object-fit: contain !important;
+}
+
+body.contact-page .navbar .brand-text h3 {
+    margin: 0 0 7px !important;
+
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+
+    color: #ffffff !important;
+}
+
+body.contact-page .navbar .brand-text span {
+    display: block !important;
+
+    margin: 0 !important;
+
+    font-size: 17px !important;
+    line-height: 1 !important;
+    letter-spacing: 1.5px !important;
+
+    color: #aebdca !important;
+
+    white-space: nowrap !important;
+}
+
+body.contact-page .navbar nav {
+    height: 112px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 42px !important;
+}
+
+body.contact-page .navbar nav a {
+    position: relative !important;
+
+    height: 112px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #d8dde3 !important;
+
+    font-size: 17px !important;
+    font-weight: 400 !important;
+
+    white-space: nowrap !important;
+}
+
+body.contact-page .navbar nav a:hover,
+body.contact-page .navbar nav a.active {
+    color: #19c2ff !important;
+}
+
+/* BLUE LINE UNDER CONTACT */
+body.contact-page .navbar nav a.active::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    width: 44px !important;
+    height: 3px !important;
+
+    left: 50% !important;
+    right: auto !important;
+    bottom: 25px !important;
+
+    transform: translateX(-50%) !important;
+
+    background: #19c2ff !important;
+    border-radius: 10px !important;
+}
