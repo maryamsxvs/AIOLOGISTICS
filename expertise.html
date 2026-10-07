@@ -54,12 +54,22 @@
         </div>
 
 
-        <button class="menu-toggle" type="button"
-                aria-label="Open navigation menu"
-                aria-controls="mainNav"
-                aria-expanded="false">
-            <span></span><span></span><span></span>
+        <!-- MOBILE HAMBURGER -->
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="mainNav"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
+
+
+        <!-- NAVIGATION -->
 
         <nav id="mainNav">
 
@@ -174,7 +184,7 @@
 
 
         <!-- =================================================
-             3D LOGISTICS FLOW
+             LOGISTICS FLOW
         ================================================== -->
 
         <section class="logistics-visual">
@@ -186,8 +196,6 @@
                 class="logistics-flow-image"
             >
 
-
-            <!-- NUMBERS -->
 
             <span class="visual-number number-01">
                 01
@@ -337,54 +345,65 @@
 
 
 <!-- =====================================================
-     ICONS + MOBILE MENU
+     SCRIPTS
 ====================================================== -->
 
 <script src="https://unpkg.com/lucide@latest"></script>
 
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Lucide icons
     lucide.createIcons();
+</script>
 
-    // Mobile navbar
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mainNav = document.getElementById("mainNav");
 
-    if (menuToggle && mainNav) {
+<!-- SAME MOBILE NAVIGATION LOGIC AS ABOUT -->
 
-        menuToggle.addEventListener("click", function () {
+<script>
 
-            const open = mainNav.classList.toggle("mobile-open");
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.getElementById("mainNav");
 
-            menuToggle.classList.toggle("is-open", open);
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", function () {
+
+        const open = mainNav.classList.toggle("mobile-open");
+
+        menuToggle.classList.toggle(
+            "is-open",
+            open
+        );
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(open)
+        );
+
+    });
+
+
+    mainNav.querySelectorAll("a").forEach(a =>
+        a.addEventListener("click", function () {
+
+            mainNav.classList.remove(
+                "mobile-open"
+            );
+
+            menuToggle.classList.remove(
+                "is-open"
+            );
 
             menuToggle.setAttribute(
                 "aria-expanded",
-                open ? "true" : "false"
+                "false"
             );
-        });
 
-        mainNav.querySelectorAll("a").forEach(function (link) {
+        })
+    );
 
-            link.addEventListener("click", function () {
+}
 
-                mainNav.classList.remove("mobile-open");
-                menuToggle.classList.remove("is-open");
-                menuToggle.setAttribute("aria-expanded", "false");
-
-            });
-
-        });
-
-    }
-
-});
 </script>
-
-</body>
-</html>
 
 
 </body>
