@@ -520,3 +520,17 @@ body.media-body {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
+/* MEDIA NAVBAR UNDERLINE FIX */
+
+body .navbar nav a.active::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 44px !important;
+    height: 3px !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 25px !important;
+    transform: translateX(-50%) !important;
+    background: #19c2ff !important;
+    border-radius: 10px !important;
+}
