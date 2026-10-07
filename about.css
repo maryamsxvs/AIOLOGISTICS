@@ -2751,85 +2751,22 @@ body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after {
  .hero-copy h1{font-size:40px!important}
  .team-image,.team-image.abdulaziz-image{height:390px!important}
 }
-
-
-/* =========================================================
-   ABOUT NAVBAR — MOBILE BRAND TEXT ONLY
-   Desktop navbar remains unchanged.
-========================================================= */
-
-/* Mobile-only subtitle stays hidden on desktop */
-body .navbar .mobile-subtitle {
-    display: none !important;
-}
-
+/* MOBILE NAVBAR — SHOW FULL SUBTITLE */
 @media (max-width: 760px) {
 
-    /* Keep the logo close to the left edge on phones */
-    body .navbar .nav-wrap {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        gap: 9px !important;
-    }
-
-    body .navbar .brand {
-        min-width: 0 !important;
-        flex: 1 1 auto !important;
-        gap: 9px !important;
-    }
-
-    body .navbar .brand-text {
-        min-width: 0 !important;
+    body .navbar .brand-text span {
         max-width: none !important;
-        overflow: visible !important;
-    }
 
-    /* Company name: one bold line */
-    body .navbar .brand-text h3 {
-        margin: 0 0 4px !important;
-        font-size: 14px !important;
-        line-height: 1.05 !important;
-        white-space: nowrap !important;
-    }
+        font-size: 7.5px !important;
+        line-height: 1.3 !important;
+        letter-spacing: 0.7px !important;
 
-    /* Hide desktop wording only on phones */
-    body .navbar .desktop-subtitle {
-        display: none !important;
-    }
-
-    /* Phone wording: same title, without AL KHOBAR */
-    body .navbar .mobile-subtitle {
-        display: block !important;
-        width: auto !important;
-        max-width: none !important;
-        margin: 0 !important;
-        font-size: 7px !important;
-        font-weight: 500 !important;
-        line-height: 1.15 !important;
-        letter-spacing: 0.45px !important;
-        white-space: nowrap !important;
+        white-space: normal !important;
         overflow: visible !important;
         text-overflow: clip !important;
     }
 
-    .menu-toggle {
-        margin-left: auto !important;
-        flex-shrink: 0 !important;
-    }
-}
-
-@media (max-width: 390px) {
-    body .navbar .nav-wrap {
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-    }
-
-    body .navbar .brand-text h3 {
-        font-size: 13px !important;
-    }
-
-    body .navbar .mobile-subtitle {
-        font-size: 6.4px !important;
-        letter-spacing: 0.3px !important;
+    body .navbar .brand-text {
+        max-width: 205px !important;
     }
 }
