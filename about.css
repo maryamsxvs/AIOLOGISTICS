@@ -2770,15 +2770,4 @@ body .navbar nav a.active::after, body .navbar nav#mainNav a.active::after {
         max-width: 205px !important;
     }
 }
-/* Hide AL KHOBAR only on phone */
-@media (max-width: 760px) {
-    .desktop-location {
-        display: none !important;
-    }
 
-    body .navbar .brand-text span {
-        white-space: nowrap !important;
-        overflow: visible !important;
-        text-overflow: clip !important;
-    }
-}
