@@ -848,7 +848,78 @@ body .navbar nav a.active::after {
     }
 
 }
+/* =========================================================
+   MOBILE NAVBAR — BRAND TEXT FIX
+========================================================= */
 
+@media (max-width: 760px) {
+
+    body .navbar .brand {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        gap: 9px !important;
+    }
+
+    body .navbar .brand-text {
+        flex: 1 1 auto !important;
+        max-width: none !important;
+        min-width: 0 !important;
+    }
+
+    body .navbar .brand-text h3 {
+        margin: 0 0 3px !important;
+
+        font-size: 15px !important;
+        line-height: 1.15 !important;
+
+        white-space: nowrap !important;
+    }
+
+    body .navbar .brand-text span {
+        display: block !important;
+
+        max-width: none !important;
+
+        font-size: 7px !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.45px !important;
+
+        white-space: nowrap !important;
+
+        overflow: visible !important;
+        text-overflow: clip !important;
+    }
+
+    body .navbar .logo,
+    body .navbar .logo img {
+        width: 43px !important;
+        height: 34px !important;
+    }
+
+    body .navbar .logo {
+        flex: 0 0 43px !important;
+    }
+
+    .menu-toggle {
+        margin-left: 8px !important;
+    }
+}
+
+
+/* EXTRA SMALL PHONES */
+
+@media (max-width: 390px) {
+
+    body .navbar .brand-text h3 {
+        font-size: 13px !important;
+    }
+
+    body .navbar .brand-text span {
+        font-size: 6.2px !important;
+        letter-spacing: 0.3px !important;
+    }
+
+}
 
 
   
