@@ -343,7 +343,20 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <script>
-    lucide.createIcons();
+const menuToggle=document.querySelector(".menu-toggle");
+const mainNav=document.getElementById("mainNav");
+if(menuToggle&&mainNav){
+ menuToggle.addEventListener("click",function(){
+  const open=mainNav.classList.toggle("mobile-open");
+  menuToggle.classList.toggle("is-open",open);
+  menuToggle.setAttribute("aria-expanded",String(open));
+ });
+ mainNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",function(){
+  mainNav.classList.remove("mobile-open");
+  menuToggle.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded","false");
+ }));
+}
 </script>
 
 
