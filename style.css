@@ -5899,7 +5899,7 @@ main.home-page  {
             rgba(2, 6, 11, 0.48),
             rgba(2, 6, 11, 0.58)
         ),
-        url("logai.jpg") center center / cover no-repeat !important;
+        url("logai.png") center center / cover no-repeat !important;
 
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -6145,7 +6145,7 @@ body.home-page .hero {
             rgba(2, 6, 11, 0.45),
             rgba(2, 6, 11, 0.45)
         ),
-        url("logai.jpg") center center / cover no-repeat !important;
+        url("logai.png") center center / cover no-repeat !important;
 
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -6162,7 +6162,7 @@ body.home-page .hero {
             rgba(2, 8, 16, 0.52),
             rgba(2, 8, 16, 0.66)
         ),
-        url("logai.jpg") center / cover no-repeat !important;
+        url("logai.png") center / cover no-repeat !important;
 
     position: relative;
 }
