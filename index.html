@@ -54,12 +54,22 @@
         </div>
 
 
-        <button class="menu-toggle" type="button"
-                aria-label="Open navigation menu"
-                aria-controls="mainNav"
-                aria-expanded="false">
-            <span></span><span></span><span></span>
+        <!-- MOBILE HAMBURGER -->
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="mainNav"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
+
+
+        <!-- NAVIGATION -->
 
         <nav id="mainNav">
 
@@ -149,9 +159,7 @@
                 <i data-lucide="chart-no-axes-combined"></i>
 
                 <div>
-                    <h4>
-                        Higher Efficiency
-                    </h4>
+                    <h4>Higher Efficiency</h4>
 
                     <p>
                         Leaner operations
@@ -167,9 +175,7 @@
                 <i data-lucide="shield-check"></i>
 
                 <div>
-                    <h4>
-                        Better Control
-                    </h4>
+                    <h4>Better Control</h4>
 
                     <p>
                         Accurate inventory
@@ -185,9 +191,7 @@
                 <i data-lucide="circle-dollar-sign"></i>
 
                 <div>
-                    <h4>
-                        Cost Control
-                    </h4>
+                    <h4>Cost Control</h4>
 
                     <p>
                         Lower operating costs
@@ -203,9 +207,7 @@
                 <i data-lucide="users"></i>
 
                 <div>
-                    <h4>
-                        Sustainable Growth
-                    </h4>
+                    <h4>Sustainable Growth</h4>
 
                     <p>
                         Long-term results
@@ -301,9 +303,7 @@
         <div class="home-service-grid">
 
 
-            <!-- =========================
-                 WAREHOUSE OPERATIONS
-            ========================= -->
+            <!-- WAREHOUSE OPERATIONS -->
 
             <article class="home-service-card">
 
@@ -321,9 +321,7 @@
 
 
 
-            <!-- =========================
-                 INVENTORY ACCURACY
-            ========================= -->
+            <!-- INVENTORY ACCURACY -->
 
             <article class="home-service-card">
 
@@ -341,9 +339,7 @@
 
 
 
-            <!-- =========================
-                 TRANSPORTATION SERVICES
-            ========================= -->
+            <!-- TRANSPORTATION SERVICES -->
 
             <article class="home-service-card">
 
@@ -361,9 +357,7 @@
 
 
 
-            <!-- =========================
-                 PROCESS IMPROVEMENT
-            ========================= -->
+            <!-- PROCESS IMPROVEMENT -->
 
             <article class="home-service-card">
 
@@ -397,10 +391,62 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 
+<!-- KEEP YOUR EXISTING SITE SCRIPT -->
 <script src="script.js"></script>
 
+
+<!-- LUCIDE ICONS -->
 <script>
     lucide.createIcons();
+</script>
+
+
+<!-- SAME MOBILE NAVIGATION AS ABOUT -->
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", function () {
+
+        const open = mainNav.classList.toggle("mobile-open");
+
+        menuToggle.classList.toggle(
+            "is-open",
+            open
+        );
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(open)
+        );
+
+    });
+
+
+    mainNav.querySelectorAll("a").forEach(a =>
+        a.addEventListener("click", function () {
+
+            mainNav.classList.remove(
+                "mobile-open"
+            );
+
+            menuToggle.classList.remove(
+                "is-open"
+            );
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        })
+    );
+
+}
+
 </script>
 
 
