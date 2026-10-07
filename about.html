@@ -53,7 +53,15 @@
         </div>
 
 
-        <nav>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mainNav"
+                aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav">
 
             <a href="index.html">
                 Home
@@ -1120,6 +1128,24 @@
     lucide.createIcons();
 </script>
 
+
+
+<script>
+const menuToggle=document.querySelector(".menu-toggle");
+const mainNav=document.getElementById("mainNav");
+if(menuToggle&&mainNav){
+ menuToggle.addEventListener("click",function(){
+  const open=mainNav.classList.toggle("mobile-open");
+  menuToggle.classList.toggle("is-open",open);
+  menuToggle.setAttribute("aria-expanded",String(open));
+ });
+ mainNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",function(){
+  mainNav.classList.remove("mobile-open");
+  menuToggle.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded","false");
+ }));
+}
+</script>
 
 </body>
 
