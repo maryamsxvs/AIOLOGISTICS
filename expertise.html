@@ -8,7 +8,7 @@
     <title>Expertise | AbdulAziz Al-Oufi Est</title>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
@@ -107,13 +107,6 @@
 
 <main class="expertise-page">
 
-
-    <!-- BACKGROUND GLOW -->
-
-    <div class="expertise-glow"></div>
-
-
-
     <div class="expertise-container">
 
 
@@ -125,7 +118,6 @@
 
 
             <div class="expertise-copy">
-
 
                 <p class="expertise-label">
                     OUR EXPERTISE
@@ -145,7 +137,7 @@
 
 
                 <a
-                    href="#services"
+                    href="#expertise-diagram"
                     class="expertise-button"
                 >
 
@@ -159,7 +151,6 @@
 
                 </a>
 
-
             </div>
 
 
@@ -169,50 +160,212 @@
             <div class="expertise-principles">
 
                 <span>PEOPLE</span>
-
                 <span>PROCESS</span>
-
                 <span>TECHNOLOGY</span>
-
                 <strong>BETTER RESULTS</strong>
 
             </div>
-
 
         </section>
 
 
 
         <!-- =================================================
-             LOGISTICS FLOW
+             NEW EXPERTISE DIAGRAM
         ================================================== -->
 
-        <section class="logistics-visual">
+        <section
+            class="expertise-diagram-section"
+            id="expertise-diagram"
+        >
+
+            <div class="diagram-heading">
+
+                <h2>
+                    Our <span>Expertise</span>
+                </h2>
+
+                <div class="diagram-heading-line"></div>
+
+            </div>
 
 
-            <img
-                src="expertise-flow.png"
-                alt="Warehouse, transportation, terminal and cost control logistics flow"
-                class="logistics-flow-image"
-            >
+            <div class="expertise-diagram">
 
 
-            <span class="visual-number number-01">
-                01
-            </span>
+                <!-- ===============================
+                     BLUE RING
+                ================================ -->
 
-            <span class="visual-number number-02">
-                02
-            </span>
+                <div class="expertise-ring">
 
-            <span class="visual-number number-03">
-                03
-            </span>
+                    <span class="ring-dot dot-top"></span>
+                    <span class="ring-dot dot-right"></span>
+                    <span class="ring-dot dot-bottom"></span>
+                    <span class="ring-dot dot-left"></span>
 
-            <span class="visual-number number-04">
-                04
-            </span>
+                </div>
 
+
+
+                <!-- ===============================
+                     CENTER AIO
+                ================================ -->
+
+                <div class="expertise-center">
+
+                    <div class="center-content">
+
+                        <div class="center-aio">
+                            AIO
+                        </div>
+
+                        <div class="center-logistics">
+                            LOGISTICS
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ===============================
+                     01 STORAGE OPERATIONS
+                ================================ -->
+
+                <article class="expertise-item expertise-storage">
+
+                    <div class="expertise-text">
+
+                        <span class="expertise-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Storage Operations
+                        </h3>
+
+                        <div class="small-line"></div>
+
+                    </div>
+
+
+                    <div class="expertise-image-card">
+
+                        <img
+                            src="image/exp1.png"
+                            alt="Storage Operations"
+                        >
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ===============================
+                     02 TRANSPORT HANDLING
+                ================================ -->
+
+                <article class="expertise-item expertise-transport">
+
+                    <div class="expertise-image-card">
+
+                        <img
+                            src="image/exp2.png"
+                            alt="Transport Handling"
+                        >
+
+                    </div>
+
+
+                    <div class="expertise-text">
+
+                        <span class="expertise-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Transport Handling
+                        </h3>
+
+                        <div class="small-line"></div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ===============================
+                     04 COST CONTROL
+                ================================ -->
+
+                <article class="expertise-item expertise-cost">
+
+                    <div class="expertise-text">
+
+                        <span class="expertise-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Cost Control
+                        </h3>
+
+                        <div class="small-line"></div>
+
+                    </div>
+
+
+                    <div class="expertise-image-card">
+
+                        <img
+                            src="image/exp3.png"
+                            alt="Cost Control"
+                        >
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ===============================
+                     03 TERMINAL HANDLING
+                ================================ -->
+
+                <article class="expertise-item expertise-terminal">
+
+                    <div class="expertise-image-card">
+
+                        <img
+                            src="image/exp4.png"
+                            alt="Terminal Handling"
+                        >
+
+                    </div>
+
+
+                    <div class="expertise-text">
+
+                        <span class="expertise-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Terminal Handling
+                        </h3>
+
+                        <div class="small-line"></div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
 
         </section>
 
@@ -279,7 +432,7 @@
             <article class="expertise-service">
 
                 <div class="service-icon">
-                    <i data-lucide="container"></i>
+                    <i data-lucide="ship"></i>
                 </div>
 
                 <h2>
@@ -350,13 +503,10 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 
-
 <script>
     lucide.createIcons();
 </script>
 
-
-<!-- SAME MOBILE NAVIGATION LOGIC AS ABOUT -->
 
 <script>
 
@@ -369,10 +519,7 @@ if (menuToggle && mainNav) {
 
         const open = mainNav.classList.toggle("mobile-open");
 
-        menuToggle.classList.toggle(
-            "is-open",
-            open
-        );
+        menuToggle.classList.toggle("is-open", open);
 
         menuToggle.setAttribute(
             "aria-expanded",
@@ -382,24 +529,22 @@ if (menuToggle && mainNav) {
     });
 
 
-    mainNav.querySelectorAll("a").forEach(a =>
+    mainNav.querySelectorAll("a").forEach(a => {
+
         a.addEventListener("click", function () {
 
-            mainNav.classList.remove(
-                "mobile-open"
-            );
+            mainNav.classList.remove("mobile-open");
 
-            menuToggle.classList.remove(
-                "is-open"
-            );
+            menuToggle.classList.remove("is-open");
 
             menuToggle.setAttribute(
                 "aria-expanded",
                 "false"
             );
 
-        })
-    );
+        });
+
+    });
 
 }
 
