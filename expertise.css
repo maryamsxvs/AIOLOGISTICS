@@ -25,7 +25,7 @@ body.expertise-body {
 
 
 /* =========================================================
-   PAGE BACKGROUND
+   PAGE
 ========================================================= */
 
 .expertise-page {
@@ -45,9 +45,10 @@ body.expertise-body {
 
 
 /* =========================================================
-   NAVBAR
+   NAVBAR — MATCH HOME
 ========================================================= */
 
+body.expertise-body header.navbar,
 body.expertise-body .navbar {
     width: 100% !important;
 
@@ -64,6 +65,10 @@ body.expertise-body .navbar {
         rgba(255, 255, 255, 0.07) !important;
 }
 
+
+/* NAV INNER */
+
+body.expertise-body header.navbar .nav-wrap,
 body.expertise-body .navbar .nav-wrap {
     width: 100% !important;
 
@@ -73,7 +78,9 @@ body.expertise-body .navbar .nav-wrap {
 
     margin: 0 auto !important;
 
-    padding: 0 70px !important;
+    padding:
+        0
+        70px !important;
 
     display: flex !important;
 
@@ -81,13 +88,24 @@ body.expertise-body .navbar .nav-wrap {
 
     justify-content: space-between !important;
 
+    flex-direction: row !important;
+
     gap: 24px !important;
+
+    background: transparent !important;
 }
+
+
+/* =========================================================
+   BRAND
+========================================================= */
 
 body.expertise-body .navbar .brand {
     display: flex !important;
 
     align-items: center !important;
+
+    flex: 0 1 auto !important;
 
     gap: 16px !important;
 
@@ -101,15 +119,25 @@ body.expertise-body .navbar .logo img {
 }
 
 body.expertise-body .navbar .logo {
-    flex: 0 0 56px !important;
+    flex:
+        0
+        0
+        56px !important;
 }
 
 body.expertise-body .navbar .logo img {
     object-fit: contain !important;
 }
 
+body.expertise-body .navbar .brand-text {
+    margin: 0 !important;
+}
+
 body.expertise-body .navbar .brand-text h3 {
-    margin: 0 0 7px !important;
+    margin:
+        0
+        0
+        7px !important;
 
     color: #ffffff !important;
 
@@ -128,32 +156,48 @@ body.expertise-body .navbar .brand-text span {
     white-space: nowrap !important;
 }
 
-body.expertise-body .navbar nav {
-    height: 112px !important;
 
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+body.expertise-body .navbar nav,
+body.expertise-body .navbar nav#mainNav {
     display: flex !important;
+
+    flex:
+        0
+        0
+        auto !important;
 
     align-items: center !important;
 
     justify-content: flex-end !important;
 
+    height: 112px !important;
+
     gap: 42px !important;
 
     margin: 0 !important;
 
+    margin-left: 0 !important;
+
     padding: 0 !important;
+
+    transform: none !important;
 }
 
-body.expertise-body .navbar nav a {
+body.expertise-body .navbar nav a,
+body.expertise-body .navbar nav#mainNav a {
     position: relative !important;
-
-    height: 112px !important;
 
     display: flex !important;
 
     align-items: center !important;
 
     justify-content: center !important;
+
+    height: 112px !important;
 
     margin: 0 !important;
 
@@ -169,26 +213,33 @@ body.expertise-body .navbar nav a {
 }
 
 body.expertise-body .navbar nav a.active {
-    color: #16c0ff !important;
+    color: #19c2ff !important;
 }
 
-body.expertise-body .navbar nav a.active::after {
-    content: "";
+body.expertise-body .navbar nav a.active::after,
+body.expertise-body .navbar nav#mainNav a.active::after {
+    content: "" !important;
 
-    position: absolute;
+    position: absolute !important;
 
-    left: 50%;
+    width: 44px !important;
 
-    bottom: 25px;
+    height: 3px !important;
 
-    width: 44px;
-    height: 3px;
+    left: 50% !important;
 
-    transform: translateX(-50%);
+    right: auto !important;
 
-    background: #16c0ff;
+    bottom: 25px !important;
 
-    border-radius: 10px;
+    margin: 0 !important;
+
+    transform:
+        translateX(-50%) !important;
+
+    background: #19c2ff !important;
+
+    border-radius: 10px !important;
 }
 
 
@@ -453,11 +504,6 @@ body.expertise-body .navbar nav a.active::after {
     z-index: 1;
 }
 
-
-/* =========================================================
-   RING DOTS
-========================================================= */
-
 .ring-dot {
     position: absolute;
 
@@ -583,7 +629,7 @@ body.expertise-body .navbar nav a.active::after {
 
 
 /* =========================================================
-   ITEM COMMON
+   ITEMS
 ========================================================= */
 
 .expertise-item {
@@ -593,11 +639,6 @@ body.expertise-body .navbar nav a.active::after {
 
     z-index: 5;
 }
-
-
-/* =========================================================
-   IMAGE CARDS
-========================================================= */
 
 .expertise-image-card {
     position: absolute;
@@ -633,11 +674,6 @@ body.expertise-body .navbar nav a.active::after {
         translateY(-3px)
         scale(1.01);
 }
-
-
-/* =========================================================
-   TEXT
-========================================================= */
 
 .expertise-text {
     position: absolute;
@@ -689,7 +725,7 @@ body.expertise-body .navbar nav a.active::after {
    DESKTOP POSITIONS
 ========================================================= */
 
-/* 01 STORAGE */
+/* STORAGE */
 
 .expertise-storage .expertise-text {
     left: 0;
@@ -704,7 +740,7 @@ body.expertise-body .navbar nav a.active::after {
 }
 
 
-/* 02 TRANSPORT */
+/* TRANSPORT */
 
 .expertise-transport .expertise-text {
     right: 0;
@@ -719,7 +755,7 @@ body.expertise-body .navbar nav a.active::after {
 }
 
 
-/* 04 COST */
+/* COST */
 
 .expertise-cost .expertise-text {
     left: 0;
@@ -738,7 +774,7 @@ body.expertise-body .navbar nav a.active::after {
 }
 
 
-/* 03 TERMINAL */
+/* TERMINAL */
 
 .expertise-terminal .expertise-text {
     right: 0;
@@ -837,7 +873,7 @@ body.expertise-body .navbar nav a.active::after {
 
 
 /* =========================================================
-   FOOTER LINE
+   FOOTER
 ========================================================= */
 
 .expertise-footer-line {
@@ -874,24 +910,33 @@ body.expertise-body .navbar nav a.active::after {
 
 
 /* =========================================================
-   TABLET
+   TABLET NAVBAR — MATCH HOME
 ========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
 
     body.expertise-body .navbar .nav-wrap {
-        padding:
-            0
-            35px !important;
+        padding-left: 35px !important;
+
+        padding-right: 35px !important;
     }
 
-    body.expertise-body .navbar nav {
+    body.expertise-body .navbar nav,
+    body.expertise-body .navbar nav#mainNav {
         gap: 22px !important;
     }
 
     body.expertise-body .navbar .brand-text span {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
+}
+
+
+/* =========================================================
+   TABLET PAGE
+========================================================= */
+
+@media (max-width: 1100px) {
 
     .expertise-diagram {
         transform: scale(.82);
@@ -928,26 +973,53 @@ body.expertise-body .navbar nav a.active::after {
 @media (max-width: 760px) {
 
 
-    /* =====================================
-       NAVBAR
-    ===================================== */
+    /* =====================================================
+       NAVBAR — SAME AS HOME
+    ===================================================== */
 
+    body.expertise-body header.navbar,
     body.expertise-body .navbar {
-        position: relative !important;
+        position: absolute !important;
+
+        top: 0 !important;
+
+        left: 0 !important;
+
+        width: 100% !important;
 
         height: 78px !important;
 
         min-height: 78px !important;
 
-        background: #00101B !important;
+        z-index: 9999 !important;
+
+        background:
+            rgba(3, 15, 26, .72) !important;
+
+        backdrop-filter:
+            blur(16px) !important;
+
+        -webkit-backdrop-filter:
+            blur(16px) !important;
+
+        border-bottom:
+            1px solid
+            rgba(255, 255, 255, .12) !important;
     }
+
 
     body.expertise-body .navbar .nav-wrap {
         position: relative !important;
 
         width: 100% !important;
 
+        max-width: none !important;
+
         height: 78px !important;
+
+        min-height: 78px !important;
+
+        margin: 0 !important;
 
         padding:
             0
@@ -955,9 +1027,29 @@ body.expertise-body .navbar nav a.active::after {
 
         display: flex !important;
 
+        flex-direction: row !important;
+
         align-items: center !important;
 
         justify-content: space-between !important;
+
+        gap: 12px !important;
+
+        background: transparent !important;
+    }
+
+
+    /* BRAND */
+
+    body.expertise-body .navbar .brand {
+        min-width: 0 !important;
+
+        flex:
+            1
+            1
+            auto !important;
+
+        gap: 9px !important;
     }
 
     body.expertise-body .navbar .logo,
@@ -967,12 +1059,22 @@ body.expertise-body .navbar nav a.active::after {
         height: 34px !important;
     }
 
-    body.expertise-body .navbar .brand {
-        flex: 1 1 auto !important;
+    body.expertise-body .navbar .logo {
+        flex:
+            0
+            0
+            43px !important;
+    }
+
+    body.expertise-body .navbar .brand-text {
+        flex:
+            1
+            1
+            auto !important;
+
+        max-width: none !important;
 
         min-width: 0 !important;
-
-        gap: 9px !important;
     }
 
     body.expertise-body .navbar .brand-text h3 {
@@ -983,10 +1085,16 @@ body.expertise-body .navbar nav a.active::after {
 
         font-size: 15px !important;
 
+        line-height: 1.15 !important;
+
         white-space: nowrap !important;
     }
 
     body.expertise-body .navbar .brand-text span {
+        display: block !important;
+
+        max-width: none !important;
+
         font-size: 7px !important;
 
         line-height: 1.25 !important;
@@ -994,17 +1102,30 @@ body.expertise-body .navbar nav a.active::after {
         letter-spacing: .45px !important;
 
         white-space: nowrap !important;
+
+        overflow: visible !important;
+
+        text-overflow: clip !important;
     }
 
 
-    /* =====================================
-       HAMBURGER
-    ===================================== */
+    /* HAMBURGER */
 
     .menu-toggle {
+        position: relative;
+
+        z-index: 10002;
+
         width: 44px;
 
         height: 44px;
+
+        flex:
+            0
+            0
+            44px;
+
+        margin-left: 8px !important;
 
         padding: 0;
 
@@ -1020,16 +1141,14 @@ body.expertise-body .navbar nav a.active::after {
 
         border:
             1px solid
-            rgba(32, 185, 255, 0.30);
+            rgba(32, 185, 255, .30);
 
         border-radius: 8px;
 
         background:
-            rgba(3, 18, 30, 0.40);
+            rgba(3, 18, 30, .40);
 
         cursor: pointer;
-
-        z-index: 100;
     }
 
     .menu-toggle span {
@@ -1065,11 +1184,12 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
-       MOBILE MENU
-    ===================================== */
+    /* =====================================================
+       DROPDOWN
+    ===================================================== */
 
-    body.expertise-body .navbar nav {
+    body.expertise-body .navbar nav,
+    body.expertise-body .navbar nav#mainNav {
         position: absolute !important;
 
         top: 78px !important;
@@ -1082,6 +1202,8 @@ body.expertise-body .navbar nav a.active::after {
 
         height: auto !important;
 
+        margin: 0 !important;
+
         padding:
             10px
             18px
@@ -1093,39 +1215,73 @@ body.expertise-body .navbar nav a.active::after {
 
         align-items: stretch !important;
 
+        justify-content: flex-start !important;
+
         gap: 0 !important;
 
         background:
-            rgba(0, 16, 27, 0.98) !important;
+            rgba(3, 15, 26, .97) !important;
 
-        z-index: 99;
+        backdrop-filter:
+            blur(18px) !important;
+
+        -webkit-backdrop-filter:
+            blur(18px) !important;
+
+        border-bottom:
+            1px solid
+            rgba(32, 185, 255, .20) !important;
+
+        box-shadow:
+            0 18px 35px
+            rgba(0, 0, 0, .28) !important;
+
+        transform: none !important;
     }
 
-    body.expertise-body .navbar nav.mobile-open {
+    body.expertise-body .navbar nav.mobile-open,
+    body.expertise-body .navbar nav#mainNav.mobile-open {
         display: flex !important;
     }
 
-    body.expertise-body .navbar nav a {
+    body.expertise-body .navbar nav a,
+    body.expertise-body .navbar nav#mainNav a {
         width: 100% !important;
 
         height: 52px !important;
 
-        justify-content:
-            flex-start !important;
+        margin: 0 !important;
 
-        font-size: 15px !important;
+        padding:
+            0
+            4px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: flex-start !important;
 
         border-bottom:
             1px solid
             rgba(255, 255, 255, .07);
+
+        font-size: 15px !important;
     }
 
-    body.expertise-body .navbar nav a.active::after {
+    body.expertise-body .navbar nav a:last-child {
+        border-bottom: 0;
+    }
+
+    body.expertise-body .navbar nav a.active::after,
+    body.expertise-body .navbar nav#mainNav a.active::after {
         width: 3px !important;
 
         height: 24px !important;
 
         left: -4px !important;
+
+        right: auto !important;
 
         bottom: 14px !important;
 
@@ -1133,15 +1289,15 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
+    /* =====================================================
        PAGE
-    ===================================== */
+    ===================================================== */
 
     .expertise-container {
         width: 88%;
 
         padding:
-            28px
+            105px
             0
             35px;
     }
@@ -1179,9 +1335,9 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
-       DIAGRAM HEADING
-    ===================================== */
+    /* =====================================================
+       DIAGRAM
+    ===================================================== */
 
     .expertise-diagram-section {
         margin-top: 48px;
@@ -1194,11 +1350,6 @@ body.expertise-body .navbar nav a.active::after {
     .diagram-heading h2 {
         font-size: 38px;
     }
-
-
-    /* =====================================
-       MOBILE DIAGRAM
-    ===================================== */
 
     .expertise-diagram {
         position: relative;
@@ -1219,17 +1370,12 @@ body.expertise-body .navbar nav a.active::after {
         overflow: visible;
     }
 
-
-    /* remove desktop ring */
-
     .expertise-ring {
         display: none;
     }
 
 
-    /* =====================================
-       CENTER AIO
-    ===================================== */
+    /* CENTER */
 
     .expertise-center {
         position: relative;
@@ -1263,9 +1409,9 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
+    /* =====================================================
        MOBILE ITEMS
-    ===================================== */
+    ===================================================== */
 
     .expertise-item {
         position: relative !important;
@@ -1279,7 +1425,7 @@ body.expertise-body .navbar nav a.active::after {
         margin:
             0
             0
-            30px !important;
+            24px !important;
 
         display: flex !important;
 
@@ -1291,9 +1437,7 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
-       MOBILE PNG
-    ===================================== */
+    /* IMAGES */
 
     .expertise-image-card,
     .expertise-cost .expertise-image-card {
@@ -1319,10 +1463,6 @@ body.expertise-body .navbar nav a.active::after {
         order: 1 !important;
     }
 
-
-    /* COST was larger on desktop,
-       reset it on mobile */
-
     .expertise-cost .expertise-image-card {
         width: 240px !important;
 
@@ -1330,9 +1470,7 @@ body.expertise-body .navbar nav a.active::after {
     }
 
 
-    /* =====================================
-       MOBILE TEXT
-    ===================================== */
+    /* TEXT */
 
     .expertise-text {
         position: relative !important;
@@ -1373,31 +1511,14 @@ body.expertise-body .navbar nav a.active::after {
         width: 35px;
     }
 
-
-    /* =====================================
-       SPECIFIC MOBILE ITEM SPACING
-    ===================================== */
-
-    .expertise-storage {
-        margin-bottom: 24px !important;
-    }
-
-    .expertise-transport {
-        margin-bottom: 24px !important;
-    }
-
-    .expertise-cost {
-        margin-bottom: 24px !important;
-    }
-
     .expertise-terminal {
         margin-bottom: 0 !important;
     }
 
 
-    /* =====================================
+    /* =====================================================
        SERVICES
-    ===================================== */
+    ===================================================== */
 
     .expertise-services {
         grid-template-columns: 1fr;
@@ -1430,12 +1551,28 @@ body.expertise-body .navbar nav a.active::after {
 
 @media (max-width: 390px) {
 
+    body.expertise-body .navbar .nav-wrap {
+        padding-left: 14px !important;
+
+        padding-right: 14px !important;
+    }
+
     body.expertise-body .navbar .brand-text h3 {
         font-size: 13px !important;
     }
 
     body.expertise-body .navbar .brand-text span {
         font-size: 6.2px !important;
+
+        letter-spacing: .3px !important;
+    }
+
+    .menu-toggle {
+        width: 41px;
+
+        height: 41px;
+
+        flex-basis: 41px;
     }
 
     .expertise-copy h1 {
