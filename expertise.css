@@ -13,9 +13,13 @@ html {
 body.expertise-body {
     margin: 0 !important;
     padding: 0 !important;
+
     font-family: "Inter", sans-serif;
+
     color: #ffffff;
-    background: #04182d !important;
+
+    background: #00101B !important;
+
     overflow-x: hidden;
 }
 
@@ -26,47 +30,67 @@ body.expertise-body {
 
 .expertise-page {
     min-height: 100vh;
-    background:
-        radial-gradient(circle at 50% 18%, rgba(17, 118, 186, 0.10), transparent 26%),
-        linear-gradient(180deg, #04182d 0%, #031424 100%);
+
+    background: #00101B !important;
+    background-image: none !important;
 }
 
 .expertise-container {
     width: min(92%, 1500px);
+
     margin: 0 auto;
+
     padding: 34px 0 44px;
 }
 
 
 /* =========================================================
-   NAVBAR FIX
+   NAVBAR
 ========================================================= */
 
 body.expertise-body .navbar {
     width: 100% !important;
+
     height: 112px !important;
+
     display: flex !important;
+
     align-items: center !important;
-    background: #04182d !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+
+    background: #00101B !important;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.07) !important;
 }
 
 body.expertise-body .navbar .nav-wrap {
     width: 100% !important;
+
     max-width: 1740px !important;
+
     height: 112px !important;
+
     margin: 0 auto !important;
+
     padding: 0 70px !important;
+
     display: flex !important;
+
     align-items: center !important;
+
     justify-content: space-between !important;
+
     gap: 24px !important;
 }
 
 body.expertise-body .navbar .brand {
     display: flex !important;
+
     align-items: center !important;
+
     gap: 16px !important;
+
     margin: 0 !important;
 }
 
@@ -86,39 +110,61 @@ body.expertise-body .navbar .logo img {
 
 body.expertise-body .navbar .brand-text h3 {
     margin: 0 0 7px !important;
+
     color: #ffffff !important;
+
     font-size: 25px !important;
+
     line-height: 1.2 !important;
 }
 
 body.expertise-body .navbar .brand-text span {
     color: #b7cad9 !important;
+
     font-size: 17px !important;
+
     letter-spacing: 1.5px !important;
+
     white-space: nowrap !important;
 }
 
 body.expertise-body .navbar nav {
     height: 112px !important;
+
     display: flex !important;
+
     align-items: center !important;
+
     justify-content: flex-end !important;
+
     gap: 42px !important;
+
     margin: 0 !important;
+
     padding: 0 !important;
 }
 
 body.expertise-body .navbar nav a {
     position: relative !important;
+
     height: 112px !important;
+
     display: flex !important;
+
     align-items: center !important;
+
     justify-content: center !important;
+
     margin: 0 !important;
+
     padding: 0 !important;
+
     color: #ffffff !important;
+
     text-decoration: none !important;
+
     font-size: 17px !important;
+
     white-space: nowrap !important;
 }
 
@@ -128,15 +174,27 @@ body.expertise-body .navbar nav a.active {
 
 body.expertise-body .navbar nav a.active::after {
     content: "";
+
     position: absolute;
+
     left: 50%;
+
     bottom: 25px;
+
     width: 44px;
     height: 3px;
+
     transform: translateX(-50%);
+
     background: #16c0ff;
+
     border-radius: 10px;
 }
+
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
 
 .menu-toggle {
     display: none;
@@ -149,44 +207,67 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-intro-area {
     width: 100%;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-start;
+
     margin-top: 18px;
 }
 
 .expertise-copy {
     width: 72%;
+
     max-width: 1050px;
 }
 
 .expertise-label {
     position: relative;
+
     margin: 0 0 34px;
+
     color: #1ec1ff;
+
     font-size: 14px;
+
     font-weight: 700;
+
     letter-spacing: 3px;
+
     text-transform: uppercase;
 }
 
 .expertise-label::after {
     content: "";
+
     position: absolute;
+
     left: 0;
+
     bottom: -13px;
+
     width: 48px;
+
     height: 3px;
+
     background: #17c2ff;
 }
 
 .expertise-copy h1 {
     margin: 0;
+
     color: #ffffff;
+
     font-family: "Manrope", sans-serif;
+
     font-size: clamp(42px, 4vw, 66px);
+
     font-weight: 700;
+
     line-height: 1;
+
     letter-spacing: -2.2px;
 }
 
@@ -196,54 +277,90 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-intro {
     max-width: 1000px;
+
     margin: 44px 0 0;
+
     color: #d7e4ee;
+
     font-size: 17px;
+
     line-height: 1.75;
 }
 
 .expertise-button {
     width: 330px;
+
     margin-top: 30px;
+
     padding: 22px 27px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     background: #41c5eb;
+
     color: #04182d;
+
     text-decoration: none;
+
     font-size: 16px;
+
     font-weight: 700;
-    transition: transform .25s ease, background .25s ease;
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
 }
 
 .expertise-button:hover {
     transform: translateY(-3px);
+
     background: #5ed1f0;
 }
 
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
 .expertise-principles {
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-end;
+
     padding-top: 4px;
+
     color: #a2d8f2;
+
     font-size: 12px;
+
     line-height: 1.7;
+
     letter-spacing: 3px;
 }
 
 .expertise-principles strong {
     color: #ffffff;
+
     font-weight: 500;
+
     letter-spacing: 3px;
 }
 
 .expertise-principles::after {
     content: "";
+
     width: 56px;
+
     height: 2px;
+
     margin-top: 16px;
+
     background: #19c2ff;
 }
 
@@ -258,16 +375,23 @@ body.expertise-body .navbar nav a.active::after {
 
 .diagram-heading {
     width: fit-content;
+
     margin: 0 auto 26px;
+
     text-align: center;
 }
 
 .diagram-heading h2 {
     margin: 0;
+
     font-family: "Manrope", sans-serif;
+
     font-size: 50px;
+
     font-weight: 800;
+
     line-height: 1;
+
     color: #ffffff;
 }
 
@@ -277,8 +401,11 @@ body.expertise-body .navbar nav a.active::after {
 
 .diagram-heading-line {
     width: 58px;
+
     height: 3px;
+
     margin: 16px auto 0;
+
     background: #19c2ff;
 }
 
@@ -289,74 +416,142 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-diagram {
     position: relative;
+
     width: 900px;
+
     max-width: 100%;
+
     height: 540px;
+
     margin: 0 auto;
+
     overflow: visible;
 }
 
+
+/* =========================================================
+   RING
+========================================================= */
+
 .expertise-ring {
     position: absolute;
+
     left: 50%;
+
     top: 50%;
+
     width: 320px;
+
     height: 320px;
+
     transform: translate(-50%, -50%);
+
     border: 2px solid #18bbff;
+
     border-radius: 50%;
+
     z-index: 1;
 }
 
+
+/* =========================================================
+   RING DOTS
+========================================================= */
+
 .ring-dot {
     position: absolute;
+
     width: 13px;
+
     height: 13px;
+
     background: #ffffff;
+
     border: 3px solid #18bbff;
+
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(24, 187, 255, 0.7);
+
+    box-shadow:
+        0 0 12px
+        rgba(24, 187, 255, 0.7);
+
     z-index: 10;
 }
 
 .dot-top {
     left: 50%;
+
     top: -7px;
+
     transform: translateX(-50%);
 }
 
 .dot-right {
     right: -7px;
+
     top: 50%;
+
     transform: translateY(-50%);
 }
 
 .dot-bottom {
     left: 50%;
+
     bottom: -7px;
+
     transform: translateX(-50%);
 }
 
 .dot-left {
     left: -7px;
+
     top: 50%;
+
     transform: translateY(-50%);
 }
 
+
+/* =========================================================
+   CENTER AIO
+========================================================= */
+
 .expertise-center {
     position: absolute;
+
     left: 50%;
+
     top: 50%;
+
     width: 190px;
+
     height: 190px;
+
     transform: translate(-50%, -50%);
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     border-radius: 50%;
-    background: radial-gradient(circle, #0e2941 0%, #081d30 70%, #061727 100%);
-    border: 1px dashed rgba(23, 190, 255, 0.45);
-    box-shadow: 0 0 0 15px rgba(8, 33, 51, 0.5);
+
+    background:
+        radial-gradient(
+            circle,
+            #0e2941 0%,
+            #081d30 70%,
+            #061727 100%
+        );
+
+    border:
+        1px dashed
+        rgba(23, 190, 255, 0.45);
+
+    box-shadow:
+        0 0 0 15px
+        rgba(8, 33, 51, 0.5);
+
     z-index: 3;
 }
 
@@ -366,16 +561,23 @@ body.expertise-body .navbar nav a.active::after {
 
 .center-aio {
     color: #ffffff;
+
     font-size: 58px;
+
     font-weight: 800;
+
     line-height: .9;
+
     letter-spacing: -4px;
 }
 
 .center-logistics {
     margin-top: 13px;
+
     color: #ffffff;
+
     font-size: 9px;
+
     letter-spacing: 5px;
 }
 
@@ -386,108 +588,167 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-item {
     position: absolute;
+
     inset: 0;
+
     z-index: 5;
 }
 
+
+/* =========================================================
+   IMAGE CARDS
+========================================================= */
+
 .expertise-image-card {
     position: absolute;
+
     width: 240px;
+
     height: 165px;
+
     z-index: 8;
 }
 
 .expertise-image-card img {
     width: 100%;
+
     height: 100%;
+
     display: block;
+
     object-fit: contain;
-    filter: drop-shadow(0 14px 16px rgba(0, 0, 0, 0.38));
-    transition: transform .25s ease;
+
+    filter:
+        drop-shadow(
+            0 14px 16px
+            rgba(0, 0, 0, 0.38)
+        );
+
+    transition:
+        transform .25s ease;
 }
 
 .expertise-image-card:hover img {
-    transform: translateY(-3px) scale(1.01);
+    transform:
+        translateY(-3px)
+        scale(1.01);
 }
+
+
+/* =========================================================
+   TEXT
+========================================================= */
 
 .expertise-text {
     position: absolute;
+
     min-width: 190px;
+
     z-index: 20;
 }
 
 .expertise-number {
     display: block;
+
     color: #18bbff;
+
     font-size: 22px;
+
     font-weight: 800;
+
     line-height: 1;
 }
 
 .expertise-text h3 {
     margin: 5px 0 7px;
+
     color: #ffffff;
+
     font-family: "Manrope", sans-serif;
+
     font-size: 15px;
+
     font-weight: 600;
+
     line-height: 1.2;
+
     white-space: nowrap;
 }
 
 .small-line {
     width: 24px;
+
     height: 1px;
-    background: rgba(24, 187, 255, 0.55);
+
+    background:
+        rgba(24, 187, 255, 0.55);
 }
 
 
 /* =========================================================
-   POSITIONS
+   DESKTOP POSITIONS
 ========================================================= */
 
 /* 01 STORAGE */
+
 .expertise-storage .expertise-text {
     left: 0;
+
     top: 72px;
 }
 
 .expertise-storage .expertise-image-card {
     left: 170px;
+
     top: 8px;
 }
 
+
 /* 02 TRANSPORT */
+
 .expertise-transport .expertise-text {
     right: 0;
+
     top: 72px;
 }
 
 .expertise-transport .expertise-image-card {
     right: 170px;
+
     top: 8px;
 }
 
+
 /* 04 COST */
+
 .expertise-cost .expertise-text {
     left: 0;
+
     bottom: 62px;
 }
 
 .expertise-cost .expertise-image-card {
     left: 135px;
+
     bottom: 6px;
-     width: 270px;
+
+    width: 270px;
+
     height: 185px;
 }
 
+
 /* 03 TERMINAL */
+
 .expertise-terminal .expertise-text {
     right: 0;
+
     bottom: 62px;
 }
 
 .expertise-terminal .expertise-image-card {
     right: 170px;
+
     bottom: 6px;
 }
 
@@ -498,15 +759,26 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-services {
     width: 100%;
+
     margin-top: 55px;
+
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    border-top: 1px solid rgba(25, 190, 245, 0.22);
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    border-top:
+        1px solid
+        rgba(25, 190, 245, 0.22);
 }
 
 .expertise-service {
     min-height: 210px;
-    padding: 32px 34px 28px;
+
+    padding:
+        32px
+        34px
+        28px;
 }
 
 .expertise-service:first-child {
@@ -514,36 +786,52 @@ body.expertise-body .navbar nav a.active::after {
 }
 
 .expertise-service:not(:last-child) {
-    border-right: 1px solid rgba(25, 190, 245, 0.22);
+    border-right:
+        1px solid
+        rgba(25, 190, 245, 0.22);
 }
 
 .service-icon {
     width: 42px;
+
     height: 42px;
+
     margin-bottom: 18px;
+
     color: #18bbff;
 }
 
 .service-icon svg {
     width: 35px;
+
     height: 35px;
+
     stroke-width: 1.8;
 }
 
 .expertise-service h2 {
     margin: 0 0 11px;
+
     color: #ffffff;
+
     font-family: "Manrope", sans-serif;
+
     font-size: 22px;
+
     font-weight: 700;
+
     line-height: 1.15;
 }
 
 .expertise-service p {
     max-width: 290px;
+
     margin: 0;
+
     color: #9eb6c9;
+
     font-size: 14px;
+
     line-height: 1.65;
 }
 
@@ -554,23 +842,33 @@ body.expertise-body .navbar nav a.active::after {
 
 .expertise-footer-line {
     display: flex;
+
     align-items: center;
+
     gap: 24px;
+
     margin-top: 15px;
+
     padding-bottom: 15px;
 }
 
 .expertise-footer-line > span {
     width: 60px;
+
     height: 2px;
+
     background: #19c2ff;
 }
 
 .expertise-footer-line p {
     margin: 0;
+
     color: #78abc8;
+
     font-size: 11px;
+
     font-weight: 600;
+
     letter-spacing: 3px;
 }
 
@@ -580,8 +878,11 @@ body.expertise-body .navbar nav a.active::after {
 ========================================================= */
 
 @media (max-width: 1100px) {
+
     body.expertise-body .navbar .nav-wrap {
-        padding: 0 35px !important;
+        padding:
+            0
+            35px !important;
     }
 
     body.expertise-body .navbar nav {
@@ -594,19 +895,28 @@ body.expertise-body .navbar nav a.active::after {
 
     .expertise-diagram {
         transform: scale(.82);
-        transform-origin: top center;
+
+        transform-origin:
+            top center;
+
         width: 900px;
+
         left: 50%;
+
         margin-left: -450px;
+
         margin-bottom: -90px;
     }
 
     .expertise-services {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .expertise-service {
-        border-bottom: 1px solid rgba(25, 190, 245, 0.2);
+        border-bottom:
+            1px solid
+            rgba(25, 190, 245, 0.2);
     }
 }
 
@@ -616,74 +926,132 @@ body.expertise-body .navbar nav a.active::after {
 ========================================================= */
 
 @media (max-width: 760px) {
+
+
+    /* =====================================
+       NAVBAR
+    ===================================== */
+
     body.expertise-body .navbar {
         position: relative !important;
+
         height: 78px !important;
+
         min-height: 78px !important;
+
+        background: #00101B !important;
     }
 
     body.expertise-body .navbar .nav-wrap {
         position: relative !important;
+
         width: 100% !important;
+
         height: 78px !important;
-        padding: 0 18px !important;
+
+        padding:
+            0
+            18px !important;
+
         display: flex !important;
+
         align-items: center !important;
+
         justify-content: space-between !important;
     }
 
     body.expertise-body .navbar .logo,
     body.expertise-body .navbar .logo img {
         width: 43px !important;
+
         height: 34px !important;
     }
 
     body.expertise-body .navbar .brand {
         flex: 1 1 auto !important;
+
         min-width: 0 !important;
+
         gap: 9px !important;
     }
 
     body.expertise-body .navbar .brand-text h3 {
-        margin: 0 0 3px !important;
+        margin:
+            0
+            0
+            3px !important;
+
         font-size: 15px !important;
+
         white-space: nowrap !important;
     }
 
     body.expertise-body .navbar .brand-text span {
         font-size: 7px !important;
+
         line-height: 1.25 !important;
+
         letter-spacing: .45px !important;
+
         white-space: nowrap !important;
     }
 
+
+    /* =====================================
+       HAMBURGER
+    ===================================== */
+
     .menu-toggle {
         width: 44px;
+
         height: 44px;
+
         padding: 0;
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
         justify-content: center;
+
         gap: 5px;
-        border: 1px solid rgba(32, 185, 255, 0.30);
+
+        border:
+            1px solid
+            rgba(32, 185, 255, 0.30);
+
         border-radius: 8px;
-        background: rgba(3, 18, 30, 0.40);
+
+        background:
+            rgba(3, 18, 30, 0.40);
+
         cursor: pointer;
+
         z-index: 100;
     }
 
     .menu-toggle span {
         width: 21px;
+
         height: 2px;
+
         display: block;
+
         background: #20b9ff;
+
         border-radius: 10px;
-        transition: transform .25s ease, opacity .2s ease;
+
+        transition:
+            transform .25s ease,
+            opacity .2s ease;
     }
 
     .menu-toggle.is-open span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+        transform:
+            translateY(7px)
+            rotate(45deg);
     }
 
     .menu-toggle.is-open span:nth-child(2) {
@@ -691,22 +1059,45 @@ body.expertise-body .navbar nav a.active::after {
     }
 
     .menu-toggle.is-open span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
+        transform:
+            translateY(-7px)
+            rotate(-45deg);
     }
+
+
+    /* =====================================
+       MOBILE MENU
+    ===================================== */
 
     body.expertise-body .navbar nav {
         position: absolute !important;
+
         top: 78px !important;
+
         left: 0 !important;
+
         right: 0 !important;
+
         width: 100% !important;
+
         height: auto !important;
-        padding: 10px 18px 18px !important;
+
+        padding:
+            10px
+            18px
+            18px !important;
+
         display: none !important;
+
         flex-direction: column !important;
+
         align-items: stretch !important;
+
         gap: 0 !important;
-        background: rgba(4, 24, 45, 0.98) !important;
+
+        background:
+            rgba(0, 16, 27, 0.98) !important;
+
         z-index: 99;
     }
 
@@ -716,27 +1107,49 @@ body.expertise-body .navbar nav a.active::after {
 
     body.expertise-body .navbar nav a {
         width: 100% !important;
+
         height: 52px !important;
-        justify-content: flex-start !important;
+
+        justify-content:
+            flex-start !important;
+
         font-size: 15px !important;
-        border-bottom: 1px solid rgba(255, 255, 255, .07);
+
+        border-bottom:
+            1px solid
+            rgba(255, 255, 255, .07);
     }
 
     body.expertise-body .navbar nav a.active::after {
         width: 3px !important;
+
         height: 24px !important;
+
         left: -4px !important;
+
         bottom: 14px !important;
+
         transform: none !important;
     }
 
+
+    /* =====================================
+       PAGE
+    ===================================== */
+
     .expertise-container {
         width: 88%;
-        padding-top: 35px;
+
+        padding:
+            28px
+            0
+            35px;
     }
 
     .expertise-intro-area {
         display: block;
+
+        margin-top: 0;
     }
 
     .expertise-copy {
@@ -752,107 +1165,271 @@ body.expertise-body .navbar nav a.active::after {
     }
 
     .expertise-intro {
-        margin-top: 30px;
+        margin-top: 28px;
+
         font-size: 15px;
+
+        line-height: 1.65;
     }
 
     .expertise-button {
         width: 100%;
+
+        margin-top: 24px;
     }
 
+
+    /* =====================================
+       DIAGRAM HEADING
+    ===================================== */
+
     .expertise-diagram-section {
-        margin-top: 65px;
+        margin-top: 48px;
+    }
+
+    .diagram-heading {
+        margin-bottom: 25px;
     }
 
     .diagram-heading h2 {
         font-size: 38px;
     }
 
+
+    /* =====================================
+       MOBILE DIAGRAM
+    ===================================== */
+
     .expertise-diagram {
         position: relative;
+
         left: auto;
+
         width: 100%;
+
         height: auto;
-        margin: 45px auto 0;
+
+        margin:
+            30px
+            auto
+            0;
+
         transform: none;
+
+        overflow: visible;
     }
+
+
+    /* remove desktop ring */
 
     .expertise-ring {
         display: none;
     }
 
+
+    /* =====================================
+       CENTER AIO
+    ===================================== */
+
     .expertise-center {
         position: relative;
+
         left: auto;
+
         top: auto;
-        width: 170px;
-        height: 170px;
-        margin: 0 auto 45px;
+
+        width: 150px;
+
+        height: 150px;
+
+        margin:
+            0
+            auto
+            32px;
+
         transform: none;
     }
 
     .center-aio {
-        font-size: 50px;
+        font-size: 46px;
     }
+
+    .center-logistics {
+        margin-top: 10px;
+
+        font-size: 8px;
+
+        letter-spacing: 4px;
+    }
+
+
+    /* =====================================
+       MOBILE ITEMS
+    ===================================== */
 
     .expertise-item {
-        position: relative;
-        inset: auto;
-        width: 100%;
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        position: relative !important;
+
+        inset: auto !important;
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        margin:
+            0
+            0
+            30px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 0 !important;
     }
 
-    .expertise-image-card {
+
+    /* =====================================
+       MOBILE PNG
+    ===================================== */
+
+    .expertise-image-card,
+    .expertise-cost .expertise-image-card {
         position: relative !important;
+
         left: auto !important;
+
         right: auto !important;
+
         top: auto !important;
+
         bottom: auto !important;
-        width: 100%;
-        height: 220px;
-        order: 1;
+
+        width: 230px !important;
+
+        height: 160px !important;
+
+        margin:
+            0
+            auto
+            4px !important;
+
+        order: 1 !important;
     }
+
+
+    /* COST was larger on desktop,
+       reset it on mobile */
+
+    .expertise-cost .expertise-image-card {
+        width: 240px !important;
+
+        height: 165px !important;
+    }
+
+
+    /* =====================================
+       MOBILE TEXT
+    ===================================== */
 
     .expertise-text {
         position: relative !important;
+
         left: auto !important;
+
         right: auto !important;
+
         top: auto !important;
+
         bottom: auto !important;
-        margin-top: -12px;
-        order: 2;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        margin: 0 !important;
+
+        order: 2 !important;
     }
 
     .expertise-number {
-        font-size: 27px;
+        font-size: 27px !important;
     }
 
     .expertise-text h3 {
-        font-size: 20px;
-        white-space: normal;
+        margin:
+            5px
+            0
+            8px !important;
+
+        font-size: 20px !important;
+
+        white-space: normal !important;
     }
+
+    .small-line {
+        width: 35px;
+    }
+
+
+    /* =====================================
+       SPECIFIC MOBILE ITEM SPACING
+    ===================================== */
+
+    .expertise-storage {
+        margin-bottom: 24px !important;
+    }
+
+    .expertise-transport {
+        margin-bottom: 24px !important;
+    }
+
+    .expertise-cost {
+        margin-bottom: 24px !important;
+    }
+
+    .expertise-terminal {
+        margin-bottom: 0 !important;
+    }
+
+
+    /* =====================================
+       SERVICES
+    ===================================== */
 
     .expertise-services {
         grid-template-columns: 1fr;
-        margin-top: 60px;
+
+        margin-top: 45px;
     }
 
     .expertise-service,
     .expertise-service:first-child {
         min-height: auto;
-        padding: 27px 5px;
+
+        padding:
+            27px
+            5px;
     }
 
     .expertise-service:not(:last-child) {
         border-right: none;
-        border-bottom: 1px solid rgba(25, 190, 245, 0.2);
+
+        border-bottom:
+            1px solid
+            rgba(25, 190, 245, 0.2);
     }
 }
 
+
+/* =========================================================
+   EXTRA SMALL PHONE
+========================================================= */
+
 @media (max-width: 390px) {
+
     body.expertise-body .navbar .brand-text h3 {
         font-size: 13px !important;
     }
@@ -868,10 +1445,15 @@ body.expertise-body .navbar nav a.active::after {
     .diagram-heading h2 {
         font-size: 34px;
     }
-}
 
-body.expertise-body,
-body.expertise-body .expertise-page {
-    background: #00101B !important;
-    background-image: none !important;
+    .expertise-image-card,
+    .expertise-cost .expertise-image-card {
+        width: 215px !important;
+
+        height: 150px !important;
+    }
+
+    .expertise-item {
+        margin-bottom: 22px !important;
+    }
 }
