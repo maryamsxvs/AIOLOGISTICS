@@ -869,13 +869,9 @@ body.expertise-body .navbar nav a.active::after {
         font-size: 34px;
     }
 }
-body.expertise-body {
-    background: #04182d !important;
-    background-image: none !important;
-}
 
+body.expertise-body,
 body.expertise-body .expertise-page {
-    background: #04182d !important;
+    background: #00101B !important;
     background-image: none !important;
-    background-attachment: scroll !important;
 }
