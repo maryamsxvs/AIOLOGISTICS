@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Expertise | AbdulAziz Al-Oufi Est</title>
 
     <link
@@ -18,538 +17,246 @@
     <link rel="stylesheet" href="expertise.css">
 </head>
 
-
 <body class="expertise-body">
 
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-wrap">
 
-<!-- =====================================================
-     NAVBAR
-====================================================== -->
+            <div class="brand">
+                <div class="logo">
+                    <img src="LOGO.jpg" alt="AbdulAziz Al-Oufi Est Logo">
+                </div>
 
-<header class="navbar">
-
-    <div class="nav-wrap">
-
-        <div class="brand">
-
-            <div class="logo">
-                <img
-                    src="LOGO.jpg"
-                    alt="AbdulAziz Al-Oufi Est Logo"
-                >
+                <div class="brand-text">
+                    <h3>AbdulAziz Al-Oufi Est</h3>
+                    <span>LOGISTICS & WAREHOUSE CONSULTANTS · AL KHOBAR</span>
+                </div>
             </div>
 
-            <div class="brand-text">
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mainNav"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                <h3>
-                    AbdulAziz Al-Oufi Est
-                </h3>
+            <nav id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="expertise.html" class="active">Expertise</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-                <span>
-                    LOGISTICS & WAREHOUSE CONSULTANTS · AL KHOBAR
-                </span>
+        </div>
+    </header>
 
+
+    <!-- PAGE -->
+    <main class="expertise-page">
+        <div class="expertise-container">
+
+            <!-- INTRO -->
+            <section class="expertise-intro-area">
+
+                <div class="expertise-copy">
+                    <p class="expertise-label">OUR EXPERTISE</p>
+
+                    <h1>
+                        Where We Improve
+                        <span>Operations</span>
+                    </h1>
+
+                    <p class="expertise-intro">
+                        Practical improvements across warehouse operations,
+                        transport handling, terminal handling and cost performance.
+                    </p>
+
+                    <a href="#expertise-diagram" class="expertise-button">
+                        <span>Explore Our Expertise</span>
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <div class="expertise-principles">
+                    <span>PEOPLE</span>
+                    <span>PROCESS</span>
+                    <span>TECHNOLOGY</span>
+                    <strong>BETTER RESULTS</strong>
+                </div>
+
+            </section>
+
+
+            <!-- DIAGRAM -->
+            <section class="expertise-diagram-section" id="expertise-diagram">
+
+                <div class="diagram-heading">
+                    <h2>Our <span>Expertise</span></h2>
+                    <div class="diagram-heading-line"></div>
+                </div>
+
+                <div class="expertise-diagram">
+
+                    <div class="expertise-ring">
+                        <span class="ring-dot dot-top"></span>
+                        <span class="ring-dot dot-right"></span>
+                        <span class="ring-dot dot-bottom"></span>
+                        <span class="ring-dot dot-left"></span>
+                    </div>
+
+                    <div class="expertise-center">
+                        <div class="center-content">
+                            <div class="center-aio">AIO</div>
+                            <div class="center-logistics">LOGISTICS</div>
+                        </div>
+                    </div>
+
+                    <!-- 01 -->
+                    <article class="expertise-item expertise-storage">
+                        <div class="expertise-text">
+                            <span class="expertise-number">01</span>
+                            <h3>Storage Operations</h3>
+                            <div class="small-line"></div>
+                        </div>
+
+                        <div class="expertise-image-card">
+                            <img src="image/exp1.png" alt="Storage Operations">
+                        </div>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="expertise-item expertise-transport">
+                        <div class="expertise-image-card">
+                            <img src="image/exp2.png" alt="Transport Handling">
+                        </div>
+
+                        <div class="expertise-text">
+                            <span class="expertise-number">02</span>
+                            <h3>Transport Handling</h3>
+                            <div class="small-line"></div>
+                        </div>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="expertise-item expertise-cost">
+                        <div class="expertise-text">
+                            <span class="expertise-number">04</span>
+                            <h3>Cost Control</h3>
+                            <div class="small-line"></div>
+                        </div>
+
+                        <div class="expertise-image-card">
+                            <img src="image/exp3.png" alt="Cost Control">
+                        </div>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="expertise-item expertise-terminal">
+                        <div class="expertise-image-card">
+                            <img src="image/exp4.png" alt="Terminal Handling">
+                        </div>
+
+                        <div class="expertise-text">
+                            <span class="expertise-number">03</span>
+                            <h3>Terminal Handling</h3>
+                            <div class="small-line"></div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- SERVICES -->
+            <section class="expertise-services" id="services">
+
+                <article class="expertise-service">
+                    <div class="service-icon">
+                        <i data-lucide="warehouse"></i>
+                    </div>
+                    <h2>Warehouse <br> Optimization</h2>
+                    <p>
+                        Improving warehouse flow,
+                        storage methods and daily operations.
+                    </p>
+                </article>
+
+                <article class="expertise-service">
+                    <div class="service-icon">
+                        <i data-lucide="truck"></i>
+                    </div>
+                    <h2>Transport <br> Handling</h2>
+                    <p>
+                        Improving vehicle movement,
+                        loading, offloading and material handling.
+                    </p>
+                </article>
+
+                <article class="expertise-service">
+                    <div class="service-icon">
+                        <i data-lucide="ship"></i>
+                    </div>
+                    <h2>Terminal <br> Handling</h2>
+                    <p>
+                        Improving cargo handling,
+                        staging, storage and terminal movement.
+                    </p>
+                </article>
+
+                <article class="expertise-service">
+                    <div class="service-icon">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <h2>Cost <br> Control</h2>
+                    <p>
+                        Identifying avoidable costs
+                        and improving overall operational efficiency.
+                    </p>
+                </article>
+
+            </section>
+
+            <div class="expertise-footer-line">
+                <span></span>
+                <p>STREAMLINED OPERATIONS. REAL BUSINESS IMPACT.</p>
             </div>
 
         </div>
-
-
-        <!-- MOBILE HAMBURGER -->
-
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Open navigation menu"
-            aria-controls="mainNav"
-            aria-expanded="false"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-
-        <!-- NAVIGATION -->
-
-        <nav id="mainNav">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="about.html">
-                About Us
-            </a>
-
-            <a href="expertise.html" class="active">
-                Expertise
-            </a>
-
-            <a href="media.html">
-                Media
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-
-<!-- =====================================================
-     EXPERTISE PAGE
-====================================================== -->
-
-<main class="expertise-page">
-
-    <div class="expertise-container">
-
-
-        <!-- =================================================
-             INTRO
-        ================================================== -->
-
-        <section class="expertise-intro-area">
-
-
-            <div class="expertise-copy">
-
-                <p class="expertise-label">
-                    OUR EXPERTISE
-                </p>
-
-
-                <h1>
-                    Where We Improve
-                    <span>Operations</span>
-                </h1>
-
-
-                <p class="expertise-intro">
-                    Practical improvements across warehouse operations,
-                    transport handling, terminal handling and cost performance.
-                </p>
-
-
-                <a
-                    href="#expertise-diagram"
-                    class="expertise-button"
-                >
-
-                    <span>
-                        Explore Our Expertise
-                    </span>
-
-                    <span>
-                        →
-                    </span>
-
-                </a>
-
-            </div>
-
-
-
-            <!-- TOP RIGHT WORDS -->
-
-            <div class="expertise-principles">
-
-                <span>PEOPLE</span>
-                <span>PROCESS</span>
-                <span>TECHNOLOGY</span>
-                <strong>BETTER RESULTS</strong>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             NEW EXPERTISE DIAGRAM
-        ================================================== -->
-
-        <section
-            class="expertise-diagram-section"
-            id="expertise-diagram"
-        >
-
-            <div class="diagram-heading">
-
-                <h2>
-                    Our <span>Expertise</span>
-                </h2>
-
-                <div class="diagram-heading-line"></div>
-
-            </div>
-
-
-            <div class="expertise-diagram">
-
-
-                <!-- ===============================
-                     BLUE RING
-                ================================ -->
-
-                <div class="expertise-ring">
-
-                    <span class="ring-dot dot-top"></span>
-                    <span class="ring-dot dot-right"></span>
-                    <span class="ring-dot dot-bottom"></span>
-                    <span class="ring-dot dot-left"></span>
-
-                </div>
-
-
-
-                <!-- ===============================
-                     CENTER AIO
-                ================================ -->
-
-                <div class="expertise-center">
-
-                    <div class="center-content">
-
-                        <div class="center-aio">
-                            AIO
-                        </div>
-
-                        <div class="center-logistics">
-                            LOGISTICS
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ===============================
-                     01 STORAGE OPERATIONS
-                ================================ -->
-
-                <article class="expertise-item expertise-storage">
-
-                    <div class="expertise-text">
-
-                        <span class="expertise-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Storage Operations
-                        </h3>
-
-                        <div class="small-line"></div>
-
-                    </div>
-
-
-                    <div class="expertise-image-card">
-
-                        <img
-                            src="image/exp1.png"
-                            alt="Storage Operations"
-                        >
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ===============================
-                     02 TRANSPORT HANDLING
-                ================================ -->
-
-                <article class="expertise-item expertise-transport">
-
-                    <div class="expertise-image-card">
-
-                        <img
-                            src="image/exp2.png"
-                            alt="Transport Handling"
-                        >
-
-                    </div>
-
-
-                    <div class="expertise-text">
-
-                        <span class="expertise-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Transport Handling
-                        </h3>
-
-                        <div class="small-line"></div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ===============================
-                     04 COST CONTROL
-                ================================ -->
-
-                <article class="expertise-item expertise-cost">
-
-                    <div class="expertise-text">
-
-                        <span class="expertise-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Cost Control
-                        </h3>
-
-                        <div class="small-line"></div>
-
-                    </div>
-
-
-                    <div class="expertise-image-card">
-
-                        <img
-                            src="image/exp3.png"
-                            alt="Cost Control"
-                        >
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ===============================
-                     03 TERMINAL HANDLING
-                ================================ -->
-
-                <article class="expertise-item expertise-terminal">
-
-                    <div class="expertise-image-card">
-
-                        <img
-                            src="image/exp4.png"
-                            alt="Terminal Handling"
-                        >
-
-                    </div>
-
-
-                    <div class="expertise-text">
-
-                        <span class="expertise-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Terminal Handling
-                        </h3>
-
-                        <div class="small-line"></div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             SERVICES
-        ================================================== -->
-
-        <section
-            class="expertise-services"
-            id="services"
-        >
-
-
-            <!-- 01 -->
-
-            <article class="expertise-service">
-
-                <div class="service-icon">
-                    <i data-lucide="warehouse"></i>
-                </div>
-
-                <h2>
-                    Warehouse
-                    <br>
-                    Optimization
-                </h2>
-
-                <p>
-                    Improving warehouse flow,
-                    storage methods and daily operations.
-                </p>
-
-            </article>
-
-
-
-            <!-- 02 -->
-
-            <article class="expertise-service">
-
-                <div class="service-icon">
-                    <i data-lucide="truck"></i>
-                </div>
-
-                <h2>
-                    Transport
-                    <br>
-                    Handling
-                </h2>
-
-                <p>
-                    Improving vehicle movement,
-                    loading, offloading and material handling.
-                </p>
-
-            </article>
-
-
-
-            <!-- 03 -->
-
-            <article class="expertise-service">
-
-                <div class="service-icon">
-                    <i data-lucide="ship"></i>
-                </div>
-
-                <h2>
-                    Terminal
-                    <br>
-                    Handling
-                </h2>
-
-                <p>
-                    Improving cargo handling,
-                    staging, storage and terminal movement.
-                </p>
-
-            </article>
-
-
-
-            <!-- 04 -->
-
-            <article class="expertise-service">
-
-                <div class="service-icon">
-                    <i data-lucide="coins"></i>
-                </div>
-
-                <h2>
-                    Cost
-                    <br>
-                    Control
-                </h2>
-
-                <p>
-                    Identifying avoidable costs
-                    and improving overall operational efficiency.
-                </p>
-
-            </article>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             BOTTOM LINE
-        ================================================== -->
-
-        <div class="expertise-footer-line">
-
-            <span></span>
-
-            <p>
-                STREAMLINED OPERATIONS. REAL BUSINESS IMPACT.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</main>
-
-
-
-<!-- =====================================================
-     SCRIPTS
-====================================================== -->
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<script>
-    lucide.createIcons();
-</script>
-
-
-<script>
-
-const menuToggle = document.querySelector(".menu-toggle");
-const mainNav = document.getElementById("mainNav");
-
-if (menuToggle && mainNav) {
-
-    menuToggle.addEventListener("click", function () {
-
-        const open = mainNav.classList.toggle("mobile-open");
-
-        menuToggle.classList.toggle("is-open", open);
-
-        menuToggle.setAttribute(
-            "aria-expanded",
-            String(open)
-        );
-
-    });
-
-
-    mainNav.querySelectorAll("a").forEach(a => {
-
-        a.addEventListener("click", function () {
-
-            mainNav.classList.remove("mobile-open");
-
-            menuToggle.classList.remove("is-open");
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-        });
-
-    });
-
-}
-
-</script>
-
+    </main>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const mainNav = document.getElementById("mainNav");
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener("click", function () {
+                const open = mainNav.classList.toggle("mobile-open");
+                menuToggle.classList.toggle("is-open", open);
+                menuToggle.setAttribute("aria-expanded", String(open));
+            });
+
+            mainNav.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    mainNav.classList.remove("mobile-open");
+                    menuToggle.classList.remove("is-open");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>
